@@ -34,7 +34,7 @@
 				</control>
 			</control>
 			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)">BackgroundVideoPlaying</include>
-			<include condition="!Skin.HasSetting(DisableMusicPlayingBG)">BackgroundMusicPlaying</include>
+			<include>BackgroundMusicPlaying</include>
 			<control type="image">
 				<include>BackgroundDim</include>
 				<include>FanartBrightnessAnimations</include>
@@ -414,18 +414,7 @@
 						<shadowcolor>ShadowColor</shadowcolor>
 						<label>$INFO[ListItem.Rating]</label>
 						<align>right</align>
-						<visible>Skin.HasSetting(DoNotUseStarRatingExtendedInfo) + !String.IsEmpty(ListItem.Rating)</visible>
-					</control>
-					<control type="image">
-						<description>Star Rating</description>
-						<left>610</left>
-						<top>16</top>
-						<width>100</width>
-						<height>16</height>
-						<texture>$VAR[StarRating]</texture>
-						<aspectratio align="right">keep</aspectratio>
-						<visible>!Skin.HasSetting(DoNotUseStarRatingExtendedInfo) + !String.IsEmpty(ListItem.Rating)</visible>
-						<include>StarRatingFadeAnim</include>
+						<visible>!String.IsEmpty(ListItem.Rating)</visible>
 					</control>
 					<control type="image">
 						<description>Quality</description>
@@ -459,18 +448,6 @@
 					<control type="label">
 						<description>Label</description>
 						<left>38</left>
-						<width>490</width>
-						<height>37</height>
-						<font>ListFont</font>
-						<textcolor>ListColor</textcolor>
-						<shadowcolor>ShadowColor</shadowcolor>
-						<aligny>center</aligny>
-						<info>ListItem.Label</info>
-						<visible>!Skin.HasSetting(DoNotUseStarRatingExtendedInfo)</visible>
-					</control>
-					<control type="label">
-						<description>Label</description>
-						<left>38</left>
 						<width>580</width>
 						<height>37</height>
 						<font>ListFont</font>
@@ -478,23 +455,11 @@
 						<shadowcolor>ShadowColor</shadowcolor>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
-						<visible>Skin.HasSetting(DoNotUseStarRatingExtendedInfo)</visible>
-					</control>
-					<control type="image">
-						<description>Star Rating</description>
-						<left>520</left>
-						<top>10</top>
-						<width>100</width>
-						<height>16</height>
-						<texture background="true">$VAR[StarRating]</texture>
-						<aspectratio align="right">keep</aspectratio>
-						<visible>!Skin.HasSetting(DoNotUseStarRatingExtendedInfo) + !String.IsEmpty(ListItem.Rating)</visible>
-						<include>StarRatingFadeAnim</include>
 					</control>
 				</itemlayout>
 				<focusedlayout condition="Skin.String(ExtendedInfoYoutubeViewStyle,1) | Skin.String(ExtendedInfoYoutubeViewStyle,)" height="260" width="311">
 					<control type="group">
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ThumbnailViewCoverFocusAnim</include>
+						<include>ThumbnailViewCoverFocusAnim</include>
 						<control type="label">
 							<left>14</left>
 							<width>165</width>
@@ -568,11 +533,11 @@
 						<aspectratio>stretch</aspectratio>
 						<visible>Control.HasFocus(500)</visible>
 						<include>ListViewSelectFadeAnim</include>
-						<animation type="Focus" condition="Container(500).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+						<animation type="Focus" condition="Container(500).OnNext" reversible="false">
 							<effect type="Fade" start="40" end="100" time="550" tween="back" easing="in"/>
 							<effect type="slide" start="0,-74" time="250" tween="sine" easing="out"/>
 						</animation>
-						<animation type="Focus" condition="Container(500).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+						<animation type="Focus" condition="Container(500).OnPrevious" reversible="false">
 							<effect type="Fade" start="40" end="100" time="550" tween="back" easing="in"/>
 							<effect type="slide" start="0,74" time="250" tween="sine" easing="out"/>
 						</animation>
@@ -594,7 +559,7 @@
 						<bordersize>5</bordersize>
 						<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 						<aspectratio>scale</aspectratio>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+						<include>ListViewCoverFocusAnim</include>
 					</control>
 					<control type="image">
 						<description>Default Cover</description>
@@ -605,7 +570,7 @@
 						<texture>$VAR[ExtendedInfoYoutubeActualIcon]</texture>
 						<aspectratio>keep</aspectratio>
 						<visible>String.IsEmpty(ListItem.Art(thumb))</visible>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+						<include>ListViewCoverFocusAnim</include>
 					</control>
 					<control type="group">
 						<include>ListViewFocusAnim</include>
@@ -637,18 +602,7 @@
 							<shadowcolor>ShadowColor</shadowcolor>
 							<label>$INFO[ListItem.Rating]</label>
 							<align>right</align>
-							<visible>Skin.HasSetting(DoNotUseStarRatingExtendedInfo) + !String.IsEmpty(ListItem.Rating)</visible>
-						</control>
-						<control type="image">
-							<description>Star Rating</description>
-							<left>610</left>
-							<top>16</top>
-							<width>100</width>
-							<height>16</height>
-							<texture>$VAR[StarRating]</texture>
-							<aspectratio align="right">keep</aspectratio>
-							<visible>!Skin.HasSetting(DoNotUseStarRatingExtendedInfo) + !String.IsEmpty(ListItem.Rating)</visible>
-							<include>StarRatingFadeAnim</include>
+							<visible>!String.IsEmpty(ListItem.Rating)</visible>
 						</control>
 						<control type="image">
 							<description>Quality</description>
@@ -677,11 +631,11 @@
 						<aspectratio>stretch</aspectratio>
 						<visible>Control.HasFocus(500)</visible>
 						<include>ListViewSelectFadeAnim</include>
-						<animation type="Focus" condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)] + Container(500).OnNext" reversible="false">
+						<animation type="Focus" condition="Container(500).OnNext" reversible="false">
 							<effect type="Fade" start="40" end="100" time="500" tween="back" easing="in"/>
 							<effect type="slide" start="0,-37" time="200" tween="sine" easing="out"/>
 						</animation>
-						<animation type="Focus" condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)] + Container(500).OnPrevious" reversible="false">
+						<animation type="Focus" condition="Container(500).OnPrevious" reversible="false">
 							<effect type="Fade" start="40" end="100" time="500" tween="back" easing="in"/>
 							<effect type="slide" start="0,37" time="200" tween="sine" easing="out"/>
 						</animation>
@@ -717,31 +671,6 @@
 							<aligny>center</aligny>
 							<info>ListItem.Label</info>
 							<scroll>true</scroll>
-							<visible>!Skin.HasSetting(DoNotUseStarRatingExtendedInfo)</visible>
-						</control>
-						<control type="label">
-							<description>Label</description>
-							<left>38</left>
-							<width>580</width>
-							<height>37</height>
-							<font>ListFont</font>
-							<textcolor>SelectedColor</textcolor>
-							<shadowcolor>ShadowColor</shadowcolor>
-							<aligny>center</aligny>
-							<info>ListItem.Label</info>
-							<scroll>true</scroll>
-							<visible>Skin.HasSetting(DoNotUseStarRatingExtendedInfo)</visible>
-						</control>
-						<control type="image">
-							<description>Star Rating</description>
-							<left>520</left>
-							<top>10</top>
-							<width>100</width>
-							<height>16</height>
-							<texture background="true">$VAR[StarRating]</texture>
-							<aspectratio align="right">keep</aspectratio>
-							<visible>!Skin.HasSetting(DoNotUseStarRatingExtendedInfo) + !String.IsEmpty(ListItem.Rating)</visible>
-							<include>StarRatingFadeAnim</include>
 						</control>
 					</control>
 				</focusedlayout>
@@ -779,18 +708,6 @@
 					<control type="label">
 						<include>InfoPaneItemTitle</include>
 						<label>$INFO[ListItem.Rating]</label>
-						<visible>Skin.HasSetting(DoNotUseStarRatingExtendedInfo)</visible>
-					</control>
-					
-					<control type="image">
-						<left>590</left>
-						<top>1</top>
-						<width>100</width>
-						<height>16</height>
-						<texture>$VAR[StarRating]</texture>
-						<aspectratio>keep</aspectratio>
-						<visible>!Skin.HasSetting(DoNotUseStarRatingExtendedInfo) + !String.IsEmpty(ListItem.Rating)</visible>
-						<include>MediaFlagFadeAnim</include>
 					</control>
 					
 					<control type="label">
@@ -806,7 +723,7 @@
 					<width>65</width>
 					<height>35</height>
 					<aspectratio>stretch</aspectratio>
-					<texture>flagging/$VAR[MediaFlagTheme]/video/3d.png</texture>
+					<texture>flagging/default/video/3d.png</texture>
 					<include>MediaViewOpenCloseAnim</include>
 					<include>MediaFlagFadeAnim</include>
 					<visible>String.IsEqual(Container(500).ListItem.Property(dimension),3d)</visible>

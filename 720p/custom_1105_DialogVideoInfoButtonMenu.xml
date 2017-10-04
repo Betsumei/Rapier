@@ -11,7 +11,6 @@
 		<control type="group">
 			<depth>DepthDialog</depth>
 			<animation effect="slide" end="0,-18" condition="[System.HasAddon(script.extendedinfo) + System.HasAddon(script.libraryeditor) + Skin.String(DialogVideoInfoButtonMenu,director)] | Skin.String(DialogVideoInfoButtonMenu,top250) | Skin.String(DialogVideoInfoButtonMenu,CustomWidgetsAspectTop) | Skin.String(DialogVideoInfoButtonMenu,CustomWidgetsAspectBottom)">Conditional</animation>
-			<animation effect="slide" end="-80,0" condition="Skin.String(DialogVideoInfoButtonMenu,LowCPUPowerMode)">Conditional</animation>
 			<include>DialogOpenCloseAnim</include>
 			
 			<include content="DialogWithCloseBtn2" condition="[[System.HasAddon(script.extendedinfo) | System.HasAddon(script.libraryeditor)] + Skin.String(DialogVideoInfoButtonMenu,director)] | Skin.String(DialogVideoInfoButtonMenu,rating) | Skin.String(DialogVideoInfoButtonMenu,writer) | Skin.String(DialogVideoInfoButtonMenu,artist)">
@@ -24,12 +23,6 @@
 				<param name="width" value="364"/>
 				<param name="height" value="199" />
 				<param name="left" value="302" />
-			</include>
-			
-			<include content="DialogWithCloseBtn2" condition="Skin.String(DialogVideoInfoButtonMenu,LowCPUPowerMode)">
-				<param name="width" value="524"/>
-				<param name="height" value="162" />
-				<param name="left" value="462" />
 			</include>
 			
 			<include content="DialogWithCloseBtn2" condition="Skin.String(DialogVideoInfoButtonMenu,CustomWidgets)">
@@ -116,33 +109,6 @@
 					<textwidth>290</textwidth>
 					<include>ContextMenuBtn</include>
 					<visible>Skin.String(DialogVideoInfoButtonMenu,top250) + System.HasAddon(script.libraryeditor)</visible>
-				</control>
-				<control type="button" id="988">
-					<description>Disable Animations Only</description>
-					<label>$LOCALIZE[31430]</label>
-					<onclick>Skin.SetString(LowCPUPowerMode,Animations)</onclick>
-					<onclick>Dialog.Close(1105)</onclick>
-					<width>460</width>
-					<textwidth>450</textwidth>
-					<include>ContextMenuBtn</include>
-					<visible>Skin.String(DialogVideoInfoButtonMenu,LowCPUPowerMode)</visible>
-				</control>
-				<control type="button" id="989">
-					<description>Disable Animations and CPU Demanding Skin Settings</description>
-					<label>$LOCALIZE[31431]</label>
-					<onclick>Skin.SetString(LowCPUPowerMode,Full)</onclick>
-					<onclick>Skin.Reset(PlayTrailerWindowed)</onclick>
-					<onclick>Skin.Reset(EnableMusicCdArt)</onclick>
-					<onclick>Skin.Reset(AnimateFanartMusicPlayingBG)</onclick>
-					<onclick>Skin.Reset(AnimateBackground)</onclick>
-					<onclick>Skin.Reset(AnimateFanart)</onclick>
-					<onclick condition="!Skin.HasSetting(DisableVideoPlayingBG)">Skin.ToggleSetting(DisableVideoPlayingBG)</onclick>
-					<onclick condition="!Skin.HasSetting(DisableMusicPlayingBG)">Skin.ToggleSetting(DisableMusicPlayingBG)</onclick>
-					<onclick>Dialog.Close(1105)</onclick>
-					<width>460</width>
-					<textwidth>450</textwidth>
-					<include>ContextMenuBtn</include>
-					<visible>Skin.String(DialogVideoInfoButtonMenu,LowCPUPowerMode)</visible>
 				</control>
 				<control type="button" id="990">
 					<description>Top Custom Widget</description>
@@ -331,18 +297,15 @@
 				<onup condition="Skin.String(DialogVideoInfoButtonMenu,director) | Skin.String(DialogVideoInfoButtonMenu,writer) | Skin.String(DialogVideoInfoButtonMenu,artist)">984</onup>
 				<onup condition="Skin.String(DialogVideoInfoButtonMenu,rating)">986</onup>
 				<onup condition="Skin.String(DialogVideoInfoButtonMenu,top250)">987</onup>
-				<onup condition="Skin.String(DialogVideoInfoButtonMenu,LowCPUPowerMode)">989</onup>
 				<onup condition="Skin.String(DialogVideoInfoButtonMenu,CustomWidgets)">991</onup>
 				<onup condition="Skin.String(DialogVideoInfoButtonMenu,CustomWidgetsAspectTop) | Skin.String(DialogVideoInfoButtonMenu,CustomWidgetsAspectBottom)">994</onup>
 				<ondown condition="Skin.String(DialogVideoInfoButtonMenu,director) | Skin.String(DialogVideoInfoButtonMenu,writer) | Skin.String(DialogVideoInfoButtonMenu,artist)">982</ondown>
 				<ondown condition="Skin.String(DialogVideoInfoButtonMenu,rating) | Skin.String(DialogVideoInfoButtonMenu,top250)">985</ondown>
-				<ondown condition="Skin.String(DialogVideoInfoButtonMenu,LowCPUPowerMode)">988</ondown>
 				<ondown condition="Skin.String(DialogVideoInfoButtonMenu,CustomWidgets)">990</ondown>
 				<ondown condition="Skin.String(DialogVideoInfoButtonMenu,CustomWidgetsAspectTop) | Skin.String(DialogVideoInfoButtonMenu,CustomWidgetsAspectBottom)">992</ondown>
 				<onleft>981</onleft>
 				<onright>981</onright>
 				<animation effect="slide" end="0,37" condition="[System.HasAddon(script.extendedinfo) + System.HasAddon(script.libraryeditor) + Skin.String(DialogVideoInfoButtonMenu,director)] | Skin.String(DialogVideoInfoButtonMenu,top250) | Skin.String(DialogVideoInfoButtonMenu,CustomWidgetsAspectTop) | Skin.String(DialogVideoInfoButtonMenu,CustomWidgetsAspectBottom)">Conditional</animation>
-				<animation effect="slide" end="80,0" condition="Skin.String(DialogVideoInfoButtonMenu,LowCPUPowerMode)">Conditional</animation>
 			</control>
 		</control>
 	</controls>

@@ -27,7 +27,6 @@
 					<label>$LOCALIZE[31981]</label>
 					<selected>Skin.HasSetting(PlayTrailerWindowed)</selected>
 					<onclick>Skin.ToggleSetting(PlayTrailerWindowed)</onclick>
-					<enable>!Skin.String(LowCPUPowerMode,Full)</enable>
 				</control>
 				<control type="radiobutton" id="3037">
 					<description>Use alternative duration</description>
@@ -54,55 +53,11 @@
 					<label>$LOCALIZE[31410]</label>
 					<selected>!Skin.HasSetting(DisableVideoPlayingBG)</selected>
 					<onclick>Skin.ToggleSetting(DisableVideoPlayingBG)</onclick>
-					<enable>!Skin.String(LowCPUPowerMode,Full)</enable>
 				</control>
 				<control type="button" id="3035">
 					<description>Fullscreen Video Label</description>
 					<include>SettingsHeaderBtn</include>
 					<label>$LOCALIZE[12005]</label>
-				</control>
-				<control type="radiobutton" id="3036">
-					<description>Hide Seek Bar</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31027]</label>
-					<selected>Skin.HasSetting(HideSeekBarOSD)</selected>
-					<onclick>Skin.ToggleSetting(HideSeekBarOSD)</onclick>
-				</control>
-				<control type="radiobutton" id="3019">
-					<description>Show Clear Art On OSD</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31432]</label>
-					<selected>Skin.HasSetting(ShowClearArtOSD)</selected>
-					<onclick>Skin.ToggleSetting(ShowClearArtOSD)</onclick>
-					<onclick>Skin.Reset(ShowClearLogoOSD)</onclick>
-				</control>
-				<control type="radiobutton" id="3030">
-					<description>Show Clear Logo On OSD</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31435]</label>
-					<selected>Skin.HasSetting(ShowClearLogoOSD)</selected>
-					<onclick>Skin.ToggleSetting(ShowClearLogoOSD)</onclick>
-					<onclick>Skin.Reset(ShowClearArtOSD)</onclick>
-				</control>
-				<control type="radiobutton" id="3009">
-					<description>Show "Paused" in Fullscreen Video</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31915]</label>
-					<selected>Skin.HasSetting(ShowFullscreenVideoPaused)</selected>
-					<onclick>Skin.ToggleSetting(ShowFullscreenVideoPaused)</onclick>
-				</control>
-				<control type="button" id="3020">
-					<description>View Options Label (TVShows)</description>
-					<include>SettingsHeaderBtn</include>
-					<label>$LOCALIZE[20343]</label>
-				</control>
-				<control type="togglebutton" id="3021">
-					<description>Toggle Banner / Poster</description>
-					<include>SettingsContentToggleBtn</include>
-					<label>$LOCALIZE[31405]</label>
-					<altlabel>$LOCALIZE[31404]</altlabel>
-					<usealttexture>Skin.HasSetting(UseTVShowsPosterCover)</usealttexture>
-					<onclick>Skin.ToggleSetting(UseTVShowsPosterCover)</onclick>
 				</control>
 				<control type="button" id="3038">
 					<description>TV / Radio Label</description>
@@ -131,14 +86,6 @@
 					<include>SettingsHeaderBtn</include>
 					<label>$LOCALIZE[2]</label>
 				</control>
-				<control type="radiobutton" id="3023">
-					<description>Enable Music CDArt</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31433]</label>
-					<selected>Skin.HasSetting(EnableMusicCdArt)</selected>
-					<onclick>Skin.ToggleSetting(EnableMusicCdArt)</onclick>
-					<enable>!Skin.String(LowCPUPowerMode,Full)</enable>
-				</control>
 				<control type="button" id="3034">
 					<description>Music Library Clear Logos Path</description>
 					<include>SettingsContentBtn</include>
@@ -164,30 +111,11 @@
 					<selected>Skin.HasSetting(MusicFullscreenEnabled)</selected>
 					<onclick>Skin.ToggleSetting(MusicFullscreenEnabled)</onclick>
 				</control>
-				<control type="radiobutton" id="3003">
-					<description>Enable Music Visualization / Artist Fanart In The Background</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31409]</label>
-					<selected>!Skin.HasSetting(DisableMusicPlayingBG)</selected>
-					<onclick>Skin.ToggleSetting(DisableMusicPlayingBG)</onclick>
-					<enable>!Skin.String(LowCPUPowerMode,Full)</enable>
-				</control>
 				<control type="button" id="3004">
 					<description>Choose Background</description>
 					<include>SettingsContentBtn</include>
 					<label>$LOCALIZE[31172]$VAR[MusicBackgroundLabel,: [COLOR=DefaultColor2],[/COLOR]]</label>
 					<onclick>Skin.SelectBool(31172, 31407|!UseFanartForMusicPlayingBG, 31408|UseFanartForMusicPlayingBG, 31411|UseVisualizationAndFanartForMusicPlayingBG)</onclick>
-					<enable>!Skin.String(LowCPUPowerMode,Full)</enable>
-				</control>
-				<control type="radiobutton" id="3018">
-					<description>Artist Fanart Slideshow</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[20425]</label>
-					<selected>Skin.HasSetting(EnableArtistFanartSlideshow)</selected>
-					<onclick condition="System.HasAddon(script.artistslideshow)">Skin.ToggleSetting(EnableArtistFanartSlideshow)</onclick>
-					<onclick condition="!System.HasAddon(script.artistslideshow)">InstallAddon(script.artistslideshow)</onclick>
-					<enable>!Skin.String(LowCPUPowerMode,Full)</enable>
-					<visible>Skin.HasSetting(UseFanartForMusicPlayingBG) | Skin.HasSetting(UseVisualizationAndFanartForMusicPlayingBG)</visible>
 				</control>
 				<control type="radiobutton" id="3006">
 					<description>Animate Fanart</description>
@@ -196,117 +124,6 @@
 					<selected>Skin.HasSetting(AnimateFanartMusicPlayingBG)</selected>
 					<onclick>Skin.ToggleSetting(AnimateFanartMusicPlayingBG)</onclick>
 					<visible>Skin.HasSetting(UseFanartForMusicPlayingBG) | Skin.HasSetting(UseVisualizationAndFanartForMusicPlayingBG)</visible>
-					<enable>!Skin.String(LowCPUPowerMode,Full)</enable>
-				</control>
-				<control type="button" id="3041">
-					<description>Fullscreen Music</description>
-					<include>SettingsHeaderBtn</include>
-					<label>$LOCALIZE[31997]</label>
-				</control>
-				<control type="radiobutton" id="3024">
-					<description>Show CDArt In Fullscreen Music Playback</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31434]</label>
-					<selected>!Skin.HasSetting(HideCdArtInMusicPlayingBG)</selected>
-					<onclick>Skin.ToggleSetting(HideCdArtInMusicPlayingBG)</onclick>
-				</control>
-				<control type="radiobutton" id="3001">
-					<description>Show "Paused" in Fullscreen Music</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31188]</label>
-					<selected>Skin.HasSetting(ShowFullscreenMusicPaused)</selected>
-					<onclick>Skin.ToggleSetting(ShowFullscreenMusicPaused)</onclick>
-				</control>
-				<control type="radiobutton" id="3026">
-					<description>Enable Video Lyrics</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31049]</label>
-					<selected>Skin.HasSetting(EnableVideoLyrics)</selected>
-					<onclick condition="System.HasAddon(script.cu.lrclyrics)">Skin.ToggleSetting(EnableVideoLyrics)</onclick>
-					<onclick condition="!System.HasAddon(script.cu.lrclyrics)">InstallAddon(script.cu.lrclyrics)</onclick>
-				</control>
-				<control type="button" id="3032">
-					<description>Pictures Label</description>
-					<include>SettingsHeaderBtn</include>
-					<label>$LOCALIZE[1]</label>
-				</control>
-				<control type="radiobutton" id="102">
-					<label>$LOCALIZE[31908]</label>
-					<include>SettingsContentRadioBtn</include>
-					<onclick>Skin.ToggleSetting(Show_SlideShow_Paused)</onclick>
-					<selected>!Skin.HasSetting(Show_SlideShow_Paused)</selected>
-				</control>
-				<control type="button" id="3010">
-					<description>Media Flagging Label</description>
-					<include>SettingsHeaderBtn</include>
-					<label>$LOCALIZE[31427]</label>
-				</control>
-				<control type="radiobutton" id="3011">
-					<description>Enable Media Flags</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31048]</label>
-					<selected>!Skin.HasSetting(DisableMediaFlags)</selected>
-					<onclick>Skin.ToggleSetting(DisableMediaFlags)</onclick>
-				</control>
-				<control type="togglebutton" id="3017">
-					<description>Toggle Default / Alt Media Flag Theme Colour</description>
-					<include>SettingsContentToggleBtn</include>
-					<label>$LOCALIZE[31415]</label>
-					<altlabel>$LOCALIZE[31416]</altlabel>
-					<usealttexture>Skin.HasSetting(UseAltMediaFlagTheme)</usealttexture>
-					<onclick>Skin.ToggleSetting(UseAltMediaFlagTheme)</onclick>
-					<enable>!Skin.HasSetting(DisableMediaFlags)</enable>
-				</control>
-				<control type="radiobutton" id="3012">
-					<description>Hide Video Res Media Flag</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31428]</label>
-					<selected>Skin.HasSetting(HideVideoResMediaFlag)</selected>
-					<onclick>Skin.ToggleSetting(HideVideoResMediaFlag)</onclick>
-					<enable>!Skin.HasSetting(DisableMediaFlags)</enable>
-				</control>
-				<control type="radiobutton" id="3013">
-					<description>Hide Aspect Ratio Media Flag</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31429]</label>
-					<selected>Skin.HasSetting(HideAspectRatioMediaFlag)</selected>
-					<onclick>Skin.ToggleSetting(HideAspectRatioMediaFlag)</onclick>
-					<enable>!Skin.HasSetting(DisableMediaFlags)</enable>
-				</control>
-				<control type="radiobutton" id="3015">
-					<description>Hide Rating Media Flag</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31426]</label>
-					<selected>Skin.HasSetting(HideRatingMediaFlag)</selected>
-					<onclick>Skin.ToggleSetting(HideRatingMediaFlag)</onclick>
-					<enable>!Skin.HasSetting(DisableMediaFlags)</enable>
-				</control>
-				<control type="radiobutton" id="3016">
-					<description>Show Subtitle Media Flag</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31425]</label>
-					<selected>!Skin.HasSetting(HideSubtitleMediaFlag)</selected>
-					<onclick condition="System.HasAddon(script.skin.helper.service)">Skin.ToggleSetting(HideSubtitleMediaFlag)</onclick>
-					<onclick condition="!System.HasAddon(script.skin.helper.service)">InstallAddon(script.skin.helper.service)</onclick>
-					<enable>!Skin.HasSetting(DisableMediaFlags)</enable>
-				</control>
-				<control type="radiobutton" id="3022">
-					<description>Show Audio Language Media Flag</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31423]</label>
-					<selected>!Skin.HasSetting(HideAudioLanguageMediaFlag)</selected>
-					<onclick condition="System.HasAddon(script.skin.helper.service)">Skin.ToggleSetting(HideAudioLanguageMediaFlag)</onclick>
-					<onclick condition="!System.HasAddon(script.skin.helper.service)">InstallAddon(script.skin.helper.service)</onclick>
-					<enable>!Skin.HasSetting(DisableMediaFlags)</enable>
-				</control>
-				<control type="radiobutton" id="3025">
-					<description>Hide Next Aired Status Media Flag</description>
-					<include>SettingsContentRadioBtn</include>
-					<label>$LOCALIZE[31935]</label>
-					<selected>Skin.HasSetting(EnableNextAiredStatusMediaFlag)</selected>
-					<onclick>Skin.ToggleSetting(EnableNextAiredStatusMediaFlag)</onclick>
-					<enable>!Skin.HasSetting(DisableMediaFlags)</enable>
-					<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 				</control>
 			</control>
 		</control>

@@ -165,7 +165,7 @@
 						<aspectratio>stretch</aspectratio>
 						<visible>Control.HasFocus(580)</visible>
 						<include>ListViewSelectFadeAnim</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewScrollAnim</include>
+						<include>ListViewScrollAnim</include>
 					</control>
 					<control type="image">
 						<width>470</width>
@@ -557,7 +557,6 @@
 						<height>34</height>
 						<label>[UPPERCASE]$LOCALIZE[190][/UPPERCASE]</label>
 						<onclick>SendClick(21)</onclick>
-						<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 						<onleft>580</onleft>
 						<onup>413</onup>
 						<onright>416</onright>
@@ -569,7 +568,6 @@
 						<height>34</height>
 						<label>[UPPERCASE]$LOCALIZE[192][/UPPERCASE]</label>
 						<onclick>SendClick(22)</onclick>
-						<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 						<onup>414</onup>
 						<onleft>415</onleft>
 						<onright>850</onright>
@@ -582,9 +580,9 @@
 				<top>BottomPaneOffsetY</top>
 				<!--<include>InfoPaneImage</include>-->
 				<include>InfoPaneMediaDetails</include>
-				<include condition="!Skin.HasSetting(DisableTVShowsLogo)">InfoPaneClearLogo</include>
-				<include condition="!Skin.HasSetting(DisableMoviesClearLogo)">InfoPaneClearLogoMovies</include>
-				<include condition="!Skin.HasSetting(EnableMusicLibraryClearLogos)">InfoPaneClearLogoMusic</include>
+				<include>InfoPaneClearLogo</include>
+				<include>InfoPaneClearLogoMovies</include>
+				<include>InfoPaneClearLogoMusic</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>
 			

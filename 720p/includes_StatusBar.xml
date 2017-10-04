@@ -22,7 +22,6 @@
 				<bordersize>1</bordersize>
 				<aspectratio>keep</aspectratio>
 				<visible>Player.HasAudio + ![Window.IsActive(Home) + ![Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogAddonInfo.xml)]]</visible>
-				<include condition="System.HasAddon(script.tvtunes) + [Container.Content(Movies) | Container.Content(TVShows) | Container.Content(musicvideos)]">TVTunesDisableVizCond</include>
 			</control>
 			<control type="label" id="5556">
 				<description>Audio Playing Line 1</description>
@@ -35,7 +34,6 @@
 				<scroll>true</scroll>
 				<scrollsuffix> - </scrollsuffix>
 				<visible>Player.HasAudio + ![Window.IsActive(Home) + ![Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogAddonInfo.xml)]]</visible>
-				<include condition="System.HasAddon(script.tvtunes) + [Container.Content(Movies) | Container.Content(TVShows) | Container.Content(musicvideos)]">TVTunesDisableVizCond</include>
 			</control>
 			<control type="fadelabel" id="5557">
 				<description>Audio Playing Line 2</description>
@@ -53,7 +51,6 @@
 				<pauseatend>1500</pauseatend>
 				<resetonlabelchange>false</resetonlabelchange>
 				<visible>Player.HasAudio + ![Window.IsActive(Home) + ![Window.IsActive(DialogVideoInfo.xml) | Window.IsActive(DialogMusicInfo.xml) | Window.IsActive(DialogAddonInfo.xml)]]</visible>
-				<include condition="System.HasAddon(script.tvtunes) + [Container.Content(Movies) | Container.Content(TVShows) | Container.Content(musicvideos)]">TVTunesDisableVizCond</include>
 			</control>
 			<control type="image" id="5558">
 				<width>43</width>
@@ -149,8 +146,8 @@
 				<visible>Control.IsVisible(5563)</visible>
 			</control>
 			<include condition="Integer.IsLess(System.BatteryLevel,100) + Skin.HasSetting(EnableBatteryNotification)">BatteryNotification</include>
-			<include condition="!String.IsEmpty(Weather.Plugin) + !Skin.HasSetting(DisableWeather) + !Window.IsVisible(Weather) + [Skin.HasSetting(ApplyAllWeather) | [!Skin.HasSetting(ApplyAllWeather) + Window.IsActive(Home)]]">WeatherNotification</include>
-			<include condition="!Skin.HasSetting(HideTopBarDate)">DateNotification</include>
+			<include condition="!String.IsEmpty(Weather.Plugin) + !Window.IsVisible(Weather) + [Skin.HasSetting(ApplyAllWeather) | [!Skin.HasSetting(ApplyAllWeather) + Window.IsActive(Home)]]">WeatherNotification</include>
+			<include>DateNotification</include>
 			<control type="label" id="5569">
 				<width min="25" max="100">auto</width>
 				<height>43</height>

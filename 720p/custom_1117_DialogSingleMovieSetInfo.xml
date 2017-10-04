@@ -2,7 +2,6 @@
 <window type="dialog" id="1117">
 	<defaultcontrol always="true">116</defaultcontrol>
 	<menucontrol>987</menucontrol>
-	<onload>SetProperty("TvTunesSupported", "Movies")</onload>
 	<include>ControlsOpenCloseAnim</include>
 	
 	<controls>
@@ -116,7 +115,7 @@
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(901)</visible>
 							<include>ListViewSelectFadeAnim</include>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">MediaInfoListScrollAnim</include>
+							<include>MediaInfoListScrollAnim</include>
 						</control>
 						<control type="label">
 							<left>5</left>
@@ -355,8 +354,8 @@
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(902)</visible>
 							<include>ListViewSelectFadeAnim</include>
-							<animation effect="slide" start="0,-29" time="200" tween="quadratic" easing="out" reversible="false" condition="Container(902).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">Focus</animation>
-							<animation effect="slide" start="0,29" time="200" tween="quadratic" easing="out" reversible="false" condition="Container(902).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">Focus</animation>
+							<animation effect="slide" start="0,-29" time="200" tween="quadratic" easing="out" reversible="false" condition="Container(902).OnNext">Focus</animation>
+							<animation effect="slide" start="0,29" time="200" tween="quadratic" easing="out" reversible="false" condition="Container(902).OnPrevious">Focus</animation>
 						</control>
 						<control type="label">
 							<left>5</left>

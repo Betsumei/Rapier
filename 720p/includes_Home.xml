@@ -114,7 +114,7 @@
 
 	<include name="HomeNavButtons">
 		<control type="group">
-			<visible>![Player.HasAudio + Skin.HasSetting(EnableMusicPlayingHomeProgressBar) + System.IdleTime(5)]</visible>
+			<visible>![Player.HasAudio + System.IdleTime(5)]</visible>
 			
 			<control type="button" id="101">
 				<description>Navigation Move Left</description>
@@ -1337,182 +1337,6 @@
 		<left>-10</left>
 		<width>280</width>
 	</include>
-	
-	<include name="HomeMenuNoFocusColor">
-		<textcolor>MediaInfoItemColor2</textcolor>
-	</include>
-	
-	<include name="HomeMenuFocusColor">
-		<textcolor>SelectedColor</textcolor>
-	</include>
-	
-	<include name="HomeMenuNoFocusColor2">
-		<textcolor>HomeCategoryNoFocusImageColor</textcolor>
-	</include>
-	
-	<include name="HomeMenuFocusColor2">
-		<textcolor>SelectedColor2</textcolor>
-	</include>
-
-	<include name="HomeCustomIcon1">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom1IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(7)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon2">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom2IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(8)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon3">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom3IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(9)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon4">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom4IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(10)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon5">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom5IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(11)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon6">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom6IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(12)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon7">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom7IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(13)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon8">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom8IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(14)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon9">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom9IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(17)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon10">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom10IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(18)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon11">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom11IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(19)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon12">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom12IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(20)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon13">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom13IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(21)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon14">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom14IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(22)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon15">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom15IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(23)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
-
-	<include name="HomeCustomIcon16">
-		<control type="image">
-			<include>HomeMenuIconDim</include>
-			<texture>$INFO[Skin.String(Custom16IconPath)]</texture>
-			<aspectratio>keep</aspectratio>
-			<visible>Container(850).HasFocus(24)</visible>
-			<include>HomeMenuIconAnim</include>
-		</control>
-	</include>
 
 	<include name="HomeMenu">
 		<control type="wraplist" id="850">
@@ -1559,7 +1383,7 @@
 			<include>HomeMenuOpenCloseAnim</include>
 			<include>HomeMenuFocusAnim</include>
 			<animation effect="slide" end="0,2" condition="String.IsEqual(Skin.Font,multilingual)">Conditional</animation>
-			<visible>![Player.HasAudio + System.IdleTime(5) + Skin.HasSetting(EnableMusicPlayingHomeProgressBar)]</visible>
+			<visible>![Player.HasAudio + System.IdleTime(5)]</visible>
 			<itemlayout width="260" condition="!Skin.HasSetting(ShowHomeNavButtons)">
 				<control type="label">
 					<width>260</width>
@@ -1567,8 +1391,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>HomeCategoryLabelUnfocusFont</font>
-					<include condition="!Skin.HasSetting(ToggleCategoryColors)">HomeMenuNoFocusColor</include>
-					<include condition="Skin.HasSetting(ToggleCategoryColors)">HomeMenuNoFocusColor2</include>
+					<textcolor>MediaInfoItemColor2</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
@@ -1579,8 +1402,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>HomeCategoryLabelUnfocusFont</font>
-					<include condition="!Skin.HasSetting(ToggleCategoryColors)">HomeMenuNoFocusColor</include>
-					<include condition="Skin.HasSetting(ToggleCategoryColors)">HomeMenuNoFocusColor2</include>
+					<textcolor>MediaInfoItemColor2</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
@@ -1594,8 +1416,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>HomeCategoryLabelFocusFont</font>
-						<include condition="!Skin.HasSetting(ToggleCategoryColors)">HomeMenuFocusColor</include>
-						<include condition="Skin.HasSetting(ToggleCategoryColors)">HomeMenuFocusColor2</include>
+						<textcolor>SelectedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation effect="zoom" start="74" end="100" center="auto" time="150" condition="Container(850).OnNext | Container(850).OnPrevious">Focus</animation>
 					</control>
@@ -1606,8 +1427,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>HomeCategoryLabelFocusFont</font>
-						<include condition="!Skin.HasSetting(ToggleCategoryColors)">HomeMenuFocusColor</include>
-						<include condition="Skin.HasSetting(ToggleCategoryColors)">HomeMenuFocusColor2</include>
+						<textcolor>SelectedColor</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation effect="zoom" start="74" end="100" center="auto" time="150" condition="Container(850).OnNext | Container(850).OnPrevious">Focus</animation>
 						<animation effect="rotatex" end="180" center="46.5,0" condition="true">Conditional</animation>
@@ -1620,8 +1440,7 @@
 						<width>260</width>
 						<align>center</align>
 						<font>HomeCategoryLabel2Font</font>
-						<include condition="!Skin.HasSetting(ToggleCategoryColors)">HomeMenuFocusColor</include>
-						<include condition="Skin.HasSetting(ToggleCategoryColors)">HomeMenuFocusColor2</include>
+						<textcolor>SelectedColor</textcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<animation type="Focus" condition="Container(850).OnNext | Container(850).OnPrevious">
 							<effect type="fade" start="0" end="100" time="100" delay="150"/>
@@ -1643,150 +1462,8 @@
 		</control>
 	</include>
 
-	<include name="HomeCategoryIcons">
-		<control type="group">
-			<left>540</left>
-			<top>367</top>
-			<visible>!Window.IsActive(PlayerControls) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput) + ![Player.HasAudio + System.IdleTime(5) + Skin.HasSetting(EnableMusicPlayingHomeProgressBar)]</visible>
-			
-			<control type="image">
-				<description>Music Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-music-icon.png">$INFO[Skin.String(MusicCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(1) + String.IsEqual(Container(544).NumItems,0)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-
-			<control type="image">
-				<description>PVR TV Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-pvr-icon.png">$INFO[Skin.String(PVRCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(50)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-			
-			<control type="image">
-				<description>PVR Radio Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-radio-icon.png">$INFO[Skin.String(PVRRadioCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(52)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-
-			<control type="image">
-				<description>Videos Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-videos-icon.png">$INFO[Skin.String(VideosCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(2) + String.IsEqual(Container(541).NumItems,0)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-
-			<control type="image">
-				<description>Movies Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-movies-icon.png">$INFO[Skin.String(MoviesCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(3) + String.IsEqual(Container(542).NumItems,0)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-
-			<control type="image">
-				<description>TV Shows Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-tvshows-icon.png">$INFO[Skin.String(TVShowsCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(4) + String.IsEqual(Container(543).NumItems,0)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-
-			<control type="image">
-				<description>Add-ons Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-add-ons-icon.png">$INFO[Skin.String(AddonsCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(5) + String.IsEqual(Container(546).NumItems,0)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-			
-			<control type="image">
-				<description>Games Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-games-icon.png">$INFO[Skin.String(GamesCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(26) + String.IsEqual(Container(548).NumItems,0)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-
-			<control type="image">
-				<description>Pictures Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-pictures-icon.png">$INFO[Skin.String(PicturesCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(6) + String.IsEqual(Container(545).NumItems,0)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-
-			<control type="image">
-				<description>Weather Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-weather-icon.png">$INFO[Skin.String(WeatherCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(51)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-
-			<control type="image">
-				<description>General Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-general-icon.png">$INFO[Skin.String(GeneralCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(15) + String.IsEqual(Container(547).NumItems,0)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-
-			<control type="image">
-				<description>System Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-system-icon.png">$INFO[Skin.String(SystemCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(16)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-			
-			<control type="image">
-				<description>Power Icon</description>
-				<include>HomeMenuIconDim</include>
-				<texture fallback="home-power-icon.png">$INFO[Skin.String(PowerCategoryIconPath)]</texture>
-				<aspectratio>keep</aspectratio>
-				<visible>Container(850).HasFocus(25)</visible>
-				<include>HomeMenuIconAnim</include>
-			</control>
-
-			<include condition="Skin.HasSetting(EnableCustomCategory1)">HomeCustomIcon1</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory2)">HomeCustomIcon2</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory3)">HomeCustomIcon3</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory4)">HomeCustomIcon4</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory5)">HomeCustomIcon5</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory6)">HomeCustomIcon6</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory7)">HomeCustomIcon7</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory8)">HomeCustomIcon8</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory9)">HomeCustomIcon9</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory10)">HomeCustomIcon10</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory11)">HomeCustomIcon11</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory12)">HomeCustomIcon12</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory13)">HomeCustomIcon13</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory14)">HomeCustomIcon14</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory15)">HomeCustomIcon15</include>
-			<include condition="Skin.HasSetting(EnableCustomCategory16)">HomeCustomIcon16</include>
-		</control>
-	</include>
-	
 	<include name="HomeAddonShortcutsLayout">
-		<visible>[Container(850).HasFocus($PARAM[Container850Position]) + Integer.IsGreater(Container($PARAM[id]).NumItems,0)] + !Window.IsActive(PlayerControls) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput) + ![Player.HasAudio + System.IdleTime(5) + Skin.HasSetting(EnableMusicPlayingHomeProgressBar)]</visible>
+		<visible>[Container(850).HasFocus($PARAM[Container850Position]) + Integer.IsGreater(Container($PARAM[id]).NumItems,0)] + !Window.IsActive(PlayerControls) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput) + ![Player.HasAudio + System.IdleTime(5)]</visible>
 		<include>HomeMenuIconAnim</include>
 		<animation effect="slide" end="90,0" condition="String.IsEqual(Container($PARAM[id]).NumItems,5)">Conditional</animation>
 		<animation effect="slide" end="180,0" condition="String.IsEqual(Container($PARAM[id]).NumItems,4)">Conditional</animation>
@@ -1802,7 +1479,7 @@
 		<orientation>Horizontal</orientation>
 		<onleft>$PARAM[id]</onleft>
 		<onright>$PARAM[id]</onright>
-		<ondown condition="String.IsEqual(Container(110).NumItems,0) | SkinHasSetting(HideHomeSubMenus)">850</ondown>
+		<ondown condition="String.IsEqual(Container(110).NumItems,0)">850</ondown>
 		<ondown condition="Integer.IsGreater(Container(110).NumItems,0)">110</ondown>
 		<itemlayout height="140" width="180">
 			<control type="image">
@@ -2087,7 +1764,7 @@
 
 	<include name="HomeSubMenus">
 		<control type="group" id="851">
-			<visible>![Player.HasAudio + System.IdleTime(5) + Skin.HasSetting(EnableMusicPlayingHomeProgressBar)]</visible>
+			<visible>![Player.HasAudio + System.IdleTime(5)]</visible>
 			<top>2</top>
 			<animation effect="fade" start="100" end="40" time="400" condition="!ControlGroup(851).HasFocus">Conditional</animation>
 
@@ -3215,7 +2892,7 @@
 
 	<include name="HomeSystemSubMenus">
 		<control type="group" id="852">
-			<visible>!Skin.HasSetting(HideHomeSubMenus) + ![Player.HasAudio + System.IdleTime(5) + Skin.HasSetting(EnableMusicPlayingHomeProgressBar)]</visible>
+			<visible>![Player.HasAudio + System.IdleTime(5)]</visible>
 			<top>2</top>
 			<animation effect="fade" start="100" end="40" time="400" condition="!ControlGroup(852).HasFocus">Conditional</animation>
 
@@ -3488,7 +3165,7 @@
 	
 	<include name="MusicPlayingProgressBar">
 		<control type="group">
-			<visible>Player.HasAudio + System.IdleTime(5) + Skin.HasSetting(EnableMusicPlayingHomeProgressBar)</visible>
+			<visible>Player.HasAudio + System.IdleTime(5)</visible>
 			<animation effect="fade" start="100" end="35" time="750" condition="Player.HasAudio + System.IdleTime(5)">Conditional</animation>
 			<control type="progress">
 				<description>Progressbar</description>
@@ -3499,7 +3176,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Player.HasAudio + System.IdleTime(5) + Skin.HasSetting(EnableMusicPlayingHomeProgressBar)</visible>
+			<visible>Player.HasAudio + System.IdleTime(5)</visible>
 			<animation effect="fade" start="100" end="85" time="750" condition="Player.HasAudio + System.IdleTime(5)">Conditional</animation>
 			<control type="label">
 				<description>Elapsed/Duration Time</description>
@@ -3516,7 +3193,7 @@
 	
 	<include name="MusicPlayingPlayerControls">
 		<control type="group">
-			<visible>Player.HasAudio + System.IdleTime(5) + Skin.HasSetting(EnableMusicPlayingHomeProgressBar) + !Control.IsVisible(6930)</visible>
+			<visible>Player.HasAudio + System.IdleTime(5) + !Control.IsVisible(6930)</visible>
 			<animation type="Visible" reversible="false">
 				<effect type="fade" time="400" delay="300"/>
 				<effect type="slide" start="0,25" time="400" tween="cubic" easing="out" delay="300"/>
@@ -3690,194 +3367,6 @@
 		</control>
 	</include>
 	
-	<include name="RSSFeedControl">
-		<control type="rss">
-			<description>RSS Feed</description>
-			<width>$PARAM[width]</width>
-			<height>44</height>
-			<font>RSSFont</font>
-			<urlset>1</urlset>
-			<textcolor>GreyColor2</textcolor>
-			<titlecolor>DefaultColor</titlecolor>
-			<headlinecolor>DefaultColor</headlinecolor>
-			<visible>$PARAM[visible]</visible>
-		</control>
-	</include>
-	
-	<include name="RSSFeed">
-		<control type="group">
-			<top>9</top>
-			<left>100</left>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="950" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="910" />
-				<param name="visible" value="[!Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [!Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="850" />
-				<param name="visible" value="[!Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]] | [!Window.IsActive(VolumeBar) + Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [!Window.IsActive(VolumeBar) + Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="810" />
-				<param name="visible" value="[!Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [!Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]] | [!Window.IsActive(VolumeBar) + Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="825" />
-				<param name="visible" value="Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="785" />
-				<param name="visible" value="[Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="725" />
-				<param name="visible" value="Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="685" />
-				<param name="visible" value="[Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="890" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="790" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="750" />
-				<param name="visible" value="[!Window.IsActive(VolumeBar) + Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [!Window.IsActive(VolumeBar) + Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="870" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="770" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="745" />
-				<param name="visible" value="Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="645" />
-				<param name="visible" value="Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="710" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)" />
-			</include>
-		</control>
-	</include>
-	
-	<include name="RSSFeedNoDate">
-		<control type="group">
-			<top>9</top>
-			<left>100</left>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="1065" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="1025" />
-				<param name="visible" value="[!Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [!Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="965" />
-				<param name="visible" value="[!Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]] | [!Window.IsActive(VolumeBar) + Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [!Window.IsActive(VolumeBar) + Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="925" />
-				<param name="visible" value="[!Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [!Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]] | [!Window.IsActive(VolumeBar) + Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="940" />
-				<param name="visible" value="Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="900" />
-				<param name="visible" value="[Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="840" />
-				<param name="visible" value="Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="800" />
-				<param name="visible" value="[Window.IsActive(VolumeBar) + !Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="1005" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + Player.Muted + !System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="905" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="865" />
-				<param name="visible" value="[!Window.IsActive(VolumeBar) + Player.Muted + !System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)] | [!Window.IsActive(VolumeBar) + Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [[Integer.IsGreater(System.BatteryLevel,99) + Skin.HasSetting(EnableBatteryNotification)] | !Skin.HasSetting(EnableBatteryNotification)]]" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="985" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="885" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="860" />
-				<param name="visible" value="Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="760" />
-				<param name="visible" value="Window.IsActive(VolumeBar) + !Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)" />
-			</include>
-			
-			<include content="RSSFeedControl">
-				<param name="width" value="825" />
-				<param name="visible" value="!Window.IsActive(VolumeBar) + Player.Muted + System.HasMediaDVD + !Skin.HasSetting(DisableWeather) + [Integer.IsGreater(System.BatteryLevel,0) + Integer.IsLessOrEqual(System.BatteryLevel,99)] + Skin.HasSetting(EnableBatteryNotification)" />
-			</include>
-		</control>
-	</include>
-
 	<include name="NowPlayingPanel">
 		<control type="group">
 			<visible>Player.HasMedia</visible>
@@ -4123,65 +3612,38 @@
 						<texture border="8">panels/panel.png</texture>
 					</control>
 
-					<control type="group">
-						<visible>!Skin.HasSetting(EnableMusicCdArt)</visible>
-
-						<control type="image">
-							<description>Cover Border</description>
-							<left>15</left>
-							<top>15</top>
-							<width>134</width>
-							<height>134</height>
-							<texture border="5">panels/panel-content-border.png</texture>
-						</control>
-
-						<control type="image">
-							<description>Cover</description>
-							<left>15</left>
-							<top>15</top>
-							<width>134</width>
-							<height>134</height>
-							<texture diffuse="covers/home-panel-album-cover-diffuse.png" background="true">$INFO[MusicPlayer.cover]</texture>
-							<aspectratio>stretch</aspectratio>
-						</control>
+					<control type="image">
+						<description>Cover Border</description>
+						<left>15</left>
+						<top>15</top>
+						<width>134</width>
+						<height>134</height>
+						<texture border="5">panels/panel-content-border.png</texture>
 					</control>
 
-					<control type="group">
-						<visible>Skin.HasSetting(EnableMusicCdArt)</visible>
+					<control type="image">
+						<description>Default Cover</description>
+						<left>25</left>
+						<top>25</top>
+						<width>114</width>
+						<height>114</height>
+						<bordertexture>icons/cdart/cdart-mask.png</bordertexture>
+						<texture diffuse="icons/cdart/cdart-mask.png">icons/cdart/cdart.png</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<include>CdArtImageRotateAnim</include>
+						<visible>String.IsEmpty(MusicPlayer.Cover)</visible>
+					</control>
 
-						<control type="image">
-							<description>Cover Border</description>
-							<left>15</left>
-							<top>15</top>
-							<width>134</width>
-							<height>134</height>
-							<texture border="5">panels/panel-content-border.png</texture>
-						</control>
-
-						<control type="image">
-							<description>Default Cover</description>
-							<left>25</left>
-							<top>25</top>
-							<width>114</width>
-							<height>114</height>
-							<bordertexture>icons/cdart/cdart-mask.png</bordertexture>
-							<texture diffuse="icons/cdart/cdart-mask.png">icons/cdart/cdart.png</texture>
-							<aspectratio align="center" aligny="center">keep</aspectratio>
-							<include>CdArtImageRotateAnim</include>
-							<visible>String.IsEmpty(MusicPlayer.Cover)</visible>
-						</control>
-
-						<control type="image">
-							<description>Cover</description>
-							<left>25</left>
-							<top>25</top>
-							<width>114</width>
-							<height>114</height>
-							<bordertexture>icons/cdart/cdart-mask.png</bordertexture>
-							<texture fallback="icons/cdart/cdart.png" diffuse="icons/cdart/cdart-mask.png">$INFO[MusicPlayer.Cover]</texture>
-							<aspectratio align="center" aligny="center">keep</aspectratio>
-							<include>CdArtImageRotateAnim</include>
-						</control>
+					<control type="image">
+						<description>Cover</description>
+						<left>25</left>
+						<top>25</top>
+						<width>114</width>
+						<height>114</height>
+						<bordertexture>icons/cdart/cdart-mask.png</bordertexture>
+						<texture fallback="icons/cdart/cdart.png" diffuse="icons/cdart/cdart-mask.png">$INFO[MusicPlayer.Cover]</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<include>CdArtImageRotateAnim</include>
 					</control>
 
 					<control type="label">
@@ -4301,11 +3763,11 @@
 								<texture border="4">views/list-focus.png</texture>
 								<aspectratio>stretch</aspectratio>
 								<visible>Control.HasFocus(6930)</visible>
-								<animation type="Focus" condition="Container(6930).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6930).OnNext" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 								</animation>
-								<animation type="Focus" condition="Container(6930).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6930).OnPrevious" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 								</animation>
@@ -4825,9 +4287,8 @@
 		<control type="group" id="6927">
 			<left>5</left>
 			<top>105</top>
-			<visible>String.Contains(Window(Home).Property(NextAired.ShowAllTVShows),true) + Container(850).HasFocus(4) + !String.IsEmpty(Window(Home).Property(NextAired.1.Label)) + !Window.IsActive(PlayerControls) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput) + ![Player.HasMedia + !Skin.HasSetting(HideNowPlayingHomePanel) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+			<visible>String.Contains(Window(Home).Property(NextAired.ShowAllTVShows),true) + Container(850).HasFocus(4) + !String.IsEmpty(Window(Home).Property(NextAired.1.Label)) + !Window.IsActive(PlayerControls) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput) + !Player.HasMedia</visible>
 			<include>HomeLeftPanelOpenCloseAnim</include>
-			<animation effect="slide" end="0,175" condition="Skin.HasSetting(HideNextAiredWidget)">Conditional</animation>
 
 			<control type="image">
 				<width>490</width>
@@ -4891,11 +4352,11 @@
 						<texture border="4">views/list-focus.png</texture>
 						<aspectratio>stretch</aspectratio>
 						<visible>Control.HasFocus(6926)</visible>
-						<animation type="Focus" condition="Container(6926).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+						<animation type="Focus" condition="Container(6926).OnNext" reversible="false">
 							<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 							<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 						</animation>
-						<animation type="Focus" condition="Container(6926).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+						<animation type="Focus" condition="Container(6926).OnPrevious" reversible="false">
 							<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 							<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 						</animation>
@@ -4919,7 +4380,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.1.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.1.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.1.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.1.Label)) + ![String.Contains(Window(Home).Property(NextAired.1.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.1.Label)) + ![String.Contains(Window(Home).Property(NextAired.1.Today),true)]</visible>
 					</item>
 					<item id="2">
 						<label>$INFO[Window(Home).Property(NextAired.2.NextDate),,: ]$INFO[Window.Property(NextAired.2.Label)]$INFO[Window.Property(NextAired.2.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.2.NextEpisodeNumber),E,)]</label>
@@ -4927,7 +4388,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.2.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.2.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.2.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.2.Label)) + ![String.Contains(Window(Home).Property(NextAired.2.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.2.Label)) + ![String.Contains(Window(Home).Property(NextAired.2.Today),true)]</visible>
 					</item>
 					<item id="3">
 						<label>$INFO[Window(Home).Property(NextAired.3.NextDate),,: ]$INFO[Window.Property(NextAired.3.Label)]$INFO[Window.Property(NextAired.3.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.3.NextEpisodeNumber),E,)]</label>
@@ -4935,7 +4396,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.3.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.3.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.3.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.3.Label)) + ![String.Contains(Window(Home).Property(NextAired.3.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.3.Label)) + ![String.Contains(Window(Home).Property(NextAired.3.Today),true)]</visible>
 					</item>
 					<item id="4">
 						<label>$INFO[Window(Home).Property(NextAired.4.NextDate),,: ]$INFO[Window.Property(NextAired.4.Label)]$INFO[Window.Property(NextAired.4.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.4.NextEpisodeNumber),E,)]</label>
@@ -4943,7 +4404,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.4.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.4.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.4.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.4.Label)) + ![String.Contains(Window(Home).Property(NextAired.4.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.4.Label)) + ![String.Contains(Window(Home).Property(NextAired.4.Today),true)]</visible>
 					</item>
 					<item id="5">
 						<label>$INFO[Window(Home).Property(NextAired.5.NextDate),,: ]$INFO[Window.Property(NextAired.5.Label)]$INFO[Window.Property(NextAired.5.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.5.NextEpisodeNumber),E,)]</label>
@@ -4951,7 +4412,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.5.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.5.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.5.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.5.Label)) + ![String.Contains(Window(Home).Property(NextAired.5.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.5.Label)) + ![String.Contains(Window(Home).Property(NextAired.5.Today),true)]</visible>
 					</item>
 					<item id="6">
 						<label>$INFO[Window(Home).Property(NextAired.6.NextDate),,: ]$INFO[Window.Property(NextAired.6.Label)]$INFO[Window.Property(NextAired.6.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.6.NextEpisodeNumber),E,)]</label>
@@ -4959,7 +4420,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.6.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.6.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.6.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.6.Label)) + ![String.Contains(Window(Home).Property(NextAired.6.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.6.Label)) + ![String.Contains(Window(Home).Property(NextAired.6.Today),true)]</visible>
 					</item>
 					<item id="7">
 						<label>$INFO[Window(Home).Property(NextAired.7.NextDate),,: ]$INFO[Window.Property(NextAired.7.Label)]$INFO[Window.Property(NextAired.7.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.7.NextEpisodeNumber),E,)]</label>
@@ -4967,7 +4428,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.7.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.7.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.7.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.7.Label)) + ![String.Contains(Window(Home).Property(NextAired.7.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.7.Label)) + ![String.Contains(Window(Home).Property(NextAired.7.Today),true)]</visible>
 					</item>
 					<item id="8">
 						<label>$INFO[Window(Home).Property(NextAired.8.NextDate),,: ]$INFO[Window.Property(NextAired.8.Label)]$INFO[Window.Property(NextAired.8.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.8.NextEpisodeNumber),E,)]</label>
@@ -4975,7 +4436,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.8.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.8.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.8.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.8.Label)) + ![String.Contains(Window(Home).Property(NextAired.8.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.8.Label)) + ![String.Contains(Window(Home).Property(NextAired.8.Today),true)]</visible>
 					</item>
 					<item id="9">
 						<label>$INFO[Window(Home).Property(NextAired.9.NextDate),,: ]$INFO[Window.Property(NextAired.9.Label)]$INFO[Window.Property(NextAired.9.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.9.NextEpisodeNumber),E,)]</label>
@@ -4983,7 +4444,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.9.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.9.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.9.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.9.Label)) + ![String.Contains(Window(Home).Property(NextAired.9.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.9.Label)) + ![String.Contains(Window(Home).Property(NextAired.9.Today),true)]</visible>
 					</item>
 					<item id="10">
 						<label>$INFO[Window(Home).Property(NextAired.10.NextDate),,: ]$INFO[Window.Property(NextAired.10.Label)]$INFO[Window.Property(NextAired.10.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.10.NextEpisodeNumber),E,)]</label>
@@ -4991,7 +4452,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.10.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.10.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.10.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.10.Label)) + ![String.Contains(Window(Home).Property(NextAired.10.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.10.Label)) + ![String.Contains(Window(Home).Property(NextAired.10.Today),true)]</visible>
 					</item>
 					<item id="11">
 						<label>$INFO[Window(Home).Property(NextAired.11.NextDate),,: ]$INFO[Window.Property(NextAired.11.Label)]$INFO[Window.Property(NextAired.11.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.11.NextEpisodeNumber),E,)]</label>
@@ -4999,7 +4460,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.11.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.11.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.11.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.11.Label)) + ![String.Contains(Window(Home).Property(NextAired.11.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.11.Label)) + ![String.Contains(Window(Home).Property(NextAired.11.Today),true)]</visible>
 					</item>
 					<item id="12">
 						<label>$INFO[Window(Home).Property(NextAired.12.NextDate),,: ]$INFO[Window.Property(NextAired.12.Label)]$INFO[Window.Property(NextAired.12.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.12.NextEpisodeNumber),E,)]</label>
@@ -5007,7 +4468,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.12.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.12.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.12.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.12.Label)) + ![String.Contains(Window(Home).Property(NextAired.12.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.12.Label)) + ![String.Contains(Window(Home).Property(NextAired.12.Today),true)]</visible>
 					</item>
 					<item id="13">
 						<label>$INFO[Window(Home).Property(NextAired.13.NextDate),,: ]$INFO[Window.Property(NextAired.13.Label)]$INFO[Window.Property(NextAired.13.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.13.NextEpisodeNumber),E,)]</label>
@@ -5015,7 +4476,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.13.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.13.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.13.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.13.Label)) + ![String.Contains(Window(Home).Property(NextAired.13.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.13.Label)) + ![String.Contains(Window(Home).Property(NextAired.13.Today),true)]</visible>
 					</item>
 					<item id="14">
 						<label>$INFO[Window(Home).Property(NextAired.14.NextDate),,: ]$INFO[Window.Property(NextAired.14.Label)]$INFO[Window.Property(NextAired.14.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.14.NextEpisodeNumber),E,)]</label>
@@ -5023,7 +4484,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.14.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.14.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.14.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.14.Label)) + ![String.Contains(Window(Home).Property(NextAired.14.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.14.Label)) + ![String.Contains(Window(Home).Property(NextAired.14.Today),true)]</visible>
 					</item>
 					<item id="15">
 						<label>$INFO[Window(Home).Property(NextAired.15.NextDate),,: ]$INFO[Window.Property(NextAired.15.Label)]$INFO[Window.Property(NextAired.15.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.15.NextEpisodeNumber),E,)]</label>
@@ -5031,7 +4492,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.15.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.15.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.15.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.15.Label)) + ![String.Contains(Window(Home).Property(NextAired.15.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.15.Label)) + ![String.Contains(Window(Home).Property(NextAired.15.Today),true)]</visible>
 					</item>
 					<item id="16">
 						<label>$INFO[Window(Home).Property(NextAired.16.NextDate),,: ]$INFO[Window.Property(NextAired.16.Label)]$INFO[Window.Property(NextAired.16.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.16.NextEpisodeNumber),E,)]</label>
@@ -5039,7 +4500,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.16.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.16.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.16.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.16.Label)) + ![String.Contains(Window(Home).Property(NextAired.16.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.16.Label)) + ![String.Contains(Window(Home).Property(NextAired.16.Today),true)]</visible>
 					</item>
 					<item id="17">
 						<label>$INFO[Window(Home).Property(NextAired.17.NextDate),,: ]$INFO[Window.Property(NextAired.17.Label)]$INFO[Window.Property(NextAired.17.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.17.NextEpisodeNumber),E,)]</label>
@@ -5047,7 +4508,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.17.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.17.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.17.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.17.Label)) + ![String.Contains(Window(Home).Property(NextAired.17.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.17.Label)) + ![String.Contains(Window(Home).Property(NextAired.17.Today),true)]</visible>
 					</item>
 					<item id="18">
 						<label>$INFO[Window(Home).Property(NextAired.18.NextDate),,: ]$INFO[Window.Property(NextAired.18.Label)]$INFO[Window.Property(NextAired.18.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.18.NextEpisodeNumber),E,)]</label>
@@ -5055,7 +4516,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.18.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.18.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.18.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.18.Label)) + ![String.Contains(Window(Home).Property(NextAired.18.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.18.Label)) + ![String.Contains(Window(Home).Property(NextAired.18.Today),true)]</visible>
 					</item>
 					<item id="19">
 						<label>$INFO[Window(Home).Property(NextAired.19.NextDate),,: ]$INFO[Window.Property(NextAired.19.Label)]$INFO[Window.Property(NextAired.19.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.19.NextEpisodeNumber),E,)]</label>
@@ -5063,7 +4524,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.19.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.19.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.19.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.19.Label)) + ![String.Contains(Window(Home).Property(NextAired.19.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.19.Label)) + ![String.Contains(Window(Home).Property(NextAired.19.Today),true)]</visible>
 					</item>
 					<item id="20">
 						<label>$INFO[Window(Home).Property(NextAired.20.NextDate),,: ]$INFO[Window.Property(NextAired.20.Label)]$INFO[Window.Property(NextAired.20.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.20.NextEpisodeNumber),E,)]</label>
@@ -5071,7 +4532,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.20.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.20.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.20.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.20.Label)) + ![String.Contains(Window(Home).Property(NextAired.20.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.20.Label)) + ![String.Contains(Window(Home).Property(NextAired.20.Today),true)]</visible>
 					</item>
 					<item id="21">
 						<label>$INFO[Window(Home).Property(NextAired.21.NextDate),,: ]$INFO[Window.Property(NextAired.21.Label)]$INFO[Window.Property(NextAired.21.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.21.NextEpisodeNumber),E,)]</label>
@@ -5079,7 +4540,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.21.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.21.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.21.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.21.Label)) + ![String.Contains(Window(Home).Property(NextAired.21.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.21.Label)) + ![String.Contains(Window(Home).Property(NextAired.21.Today),true)]</visible>
 					</item>
 					<item id="22">
 						<label>$INFO[Window(Home).Property(NextAired.22.NextDate),,: ]$INFO[Window.Property(NextAired.22.Label)]$INFO[Window.Property(NextAired.22.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.22.NextEpisodeNumber),E,)]</label>
@@ -5087,7 +4548,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.22.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.22.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.22.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.22.Label)) + ![String.Contains(Window(Home).Property(NextAired.22.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.22.Label)) + ![String.Contains(Window(Home).Property(NextAired.22.Today),true)]</visible>
 					</item>
 					<item id="23">
 						<label>$INFO[Window(Home).Property(NextAired.23.NextDate),,: ]$INFO[Window.Property(NextAired.23.Label)]$INFO[Window.Property(NextAired.23.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.23.NextEpisodeNumber),E,)]</label>
@@ -5095,7 +4556,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.23.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.23.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.23.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.23.Label)) + ![String.Contains(Window(Home).Property(NextAired.23.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.23.Label)) + ![String.Contains(Window(Home).Property(NextAired.23.Today),true)]</visible>
 					</item>
 					<item id="24">
 						<label>$INFO[Window(Home).Property(NextAired.24.NextDate),,: ]$INFO[Window.Property(NextAired.24.Label)]$INFO[Window.Property(NextAired.24.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.24.NextEpisodeNumber),E,)]</label>
@@ -5103,7 +4564,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.24.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.24.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.24.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.24.Label)) + ![String.Contains(Window(Home).Property(NextAired.24.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.24.Label)) + ![String.Contains(Window(Home).Property(NextAired.24.Today),true)]</visible>
 					</item>
 					<item id="25">
 						<label>$INFO[Window(Home).Property(NextAired.25.NextDate),,: ]$INFO[Window.Property(NextAired.25.Label)]$INFO[Window.Property(NextAired.25.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.25.NextEpisodeNumber),E,)]</label>
@@ -5111,7 +4572,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.25.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.25.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.25.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.25.Label)) + ![String.Contains(Window(Home).Property(NextAired.25.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.25.Label)) + ![String.Contains(Window(Home).Property(NextAired.25.Today),true)]</visible>
 					</item>
 					<item id="26">
 						<label>$INFO[Window(Home).Property(NextAired.26.NextDate),,: ]$INFO[Window.Property(NextAired.26.Label)]$INFO[Window.Property(NextAired.26.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.26.NextEpisodeNumber),E,)]</label>
@@ -5119,7 +4580,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.26.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.26.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.26.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.26.Label)) + ![String.Contains(Window(Home).Property(NextAired.26.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.26.Label)) + ![String.Contains(Window(Home).Property(NextAired.26.Today),true)]</visible>
 					</item>
 					<item id="27">
 						<label>$INFO[Window(Home).Property(NextAired.27.NextDate),,: ]$INFO[Window.Property(NextAired.27.Label)]$INFO[Window.Property(NextAired.27.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.27.NextEpisodeNumber),E,)]</label>
@@ -5127,7 +4588,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.27.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.27.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.27.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.27.Label)) + ![String.Contains(Window(Home).Property(NextAired.27.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.27.Label)) + ![String.Contains(Window(Home).Property(NextAired.27.Today),true)]</visible>
 					</item>
 					<item id="28">
 						<label>$INFO[Window(Home).Property(NextAired.28.NextDate),,: ]$INFO[Window.Property(NextAired.28.Label)]$INFO[Window.Property(NextAired.28.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.28.NextEpisodeNumber),E,)]</label>
@@ -5135,7 +4596,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.28.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.28.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.28.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.28.Label)) + ![String.Contains(Window(Home).Property(NextAired.28.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.28.Label)) + ![String.Contains(Window(Home).Property(NextAired.28.Today),true)]</visible>
 					</item>
 					<item id="29">
 						<label>$INFO[Window(Home).Property(NextAired.29.NextDate),,: ]$INFO[Window.Property(NextAired.29.Label)]$INFO[Window.Property(NextAired.29.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.29.NextEpisodeNumber),E,)]</label>
@@ -5143,7 +4604,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.29.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.29.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.29.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.29.Label)) + ![String.Contains(Window(Home).Property(NextAired.29.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.29.Label)) + ![String.Contains(Window(Home).Property(NextAired.29.Today),true)]</visible>
 					</item>
 					<item id="30">
 						<label>$INFO[Window(Home).Property(NextAired.30.NextDate),,: ]$INFO[Window.Property(NextAired.30.Label)]$INFO[Window.Property(NextAired.30.NextSeasonNumber), (S,]$INFO[Window.Property(NextAired.30.NextEpisodeNumber),E,)]</label>
@@ -5151,7 +4612,7 @@
 						<thumb>$INFO[Window(Home).Property(NextAired.30.Art(poster))]</thumb>
 						<icon>$INFO[Window(Home).Property(NextAired.30.Art(fanart))]</icon>
 						<onclick>ActivateWindow(Videos,$INFO[Window(Home).Property(NextAired.30.Library)],Return)</onclick>
-						<visible>!String.IsEmpty(Window(Home).Property(NextAired.30.Label)) + ![String.Contains(Window(Home).Property(NextAired.30.Today),true) + !Skin.HasSetting(HideNextAiredWidget)]</visible>
+						<visible>!String.IsEmpty(Window(Home).Property(NextAired.30.Label)) + ![String.Contains(Window(Home).Property(NextAired.30.Today),true)]</visible>
 					</item>
 				</content>
 			</control>
@@ -5264,11 +4725,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6888)</visible>
-							<animation type="Focus" condition="Container(6888).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6888).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6888).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6888).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -5360,11 +4821,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6889)</visible>
-							<animation type="Focus" condition="Container(6889).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6889).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6889).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6889).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -5457,11 +4918,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6890)</visible>
-							<animation type="Focus" condition="Container(6890).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6890).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6890).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6890).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -5547,11 +5008,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6883)</visible>
-							<animation type="Focus" condition="Container(6883).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6883).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6883).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6883).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -5742,11 +5203,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6891)</visible>
-							<animation type="Focus" condition="Container(6891).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6891).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6891).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6891).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -5833,11 +5294,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6892)</visible>
-							<animation type="Focus" condition="Container(6892).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6892).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6892).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6892).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -5926,11 +5387,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6893)</visible>
-							<animation type="Focus" condition="Container(6893).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6893).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6893).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6893).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -6014,11 +5475,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6882)</visible>
-							<animation type="Focus" condition="Container(6882).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6882).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6882).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6882).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -6166,7 +5627,7 @@
 			<include>HomeLeftPanelOpenCloseAnim</include>
 
 			<control type="group">
-				<visible>![Player.HasMedia + !Skin.HasSetting(HideNowPlayingHomePanel)]</visible>
+				<visible>!Player.HasMedia</visible>
 				
 				<include content="HomeWidgetLeftAnim">
 					<param name="id" value="6928" />
@@ -6229,11 +5690,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6928)</visible>
-							<animation type="Focus" condition="Container(6928).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6928).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6928).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6928).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -6316,11 +5777,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6929)</visible>
-							<animation type="Focus" condition="Container(6929).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6929).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6929).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6929).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -6413,11 +5874,11 @@
 								<texture border="4">views/list-focus.png</texture>
 								<aspectratio>stretch</aspectratio>
 								<visible>Control.HasFocus(6873)</visible>
-								<animation type="Focus" condition="Container(6873).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6873).OnNext" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 								</animation>
-								<animation type="Focus" condition="Container(6873).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6873).OnPrevious" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 								</animation>
@@ -6502,11 +5963,11 @@
 								<texture border="4">views/list-focus.png</texture>
 								<aspectratio>stretch</aspectratio>
 								<visible>Control.HasFocus(6874)</visible>
-								<animation type="Focus" condition="Container(6874).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6874).OnNext" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 								</animation>
-								<animation type="Focus" condition="Container(6874).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6874).OnPrevious" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 								</animation>
@@ -6525,7 +5986,7 @@
 		</control>
 	</include>
 	
-	<include name="PVRChannelsPanel">
+	<include name="PVRChannelsWidget">
 		<control type="group">
 			<visible>Container(850).HasFocus(50)</visible>
 			<visible>!Window.IsActive(PlayerControls) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput)</visible>
@@ -6621,11 +6082,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6887)</visible>
-							<animation type="Focus" condition="Container(6887).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6887).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-53" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6887).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6887).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,53" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -6638,7 +6099,7 @@
 							<width>57</width>
 							<height>57</height>
 							<texture border="7">covers/cover-case-nofocus.png</texture>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">WideListViewCoverFocusAnim</include>
+							<include>WideListViewCoverFocusAnim</include>
 						</control>
 						<control type="image">
 							<description>Cover</description>
@@ -6649,7 +6110,7 @@
 							<texture diffuse="covers/home-panel-episode-cover-diffuse.png" background="true" fallback="pvr/DefaultPVR.png">$INFO[ListItem.Thumb]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordersize>6</bordersize>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">WideListViewCoverFocusAnim</include>
+							<include>WideListViewCoverFocusAnim</include>
 						</control>
 						<control type="label">
 							<top>6</top>
@@ -6762,11 +6223,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6886)</visible>
-							<animation type="Focus" condition="Container(6886).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6886).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-53" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6886).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6886).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,53" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -6779,7 +6240,7 @@
 							<width>57</width>
 							<height>57</height>
 							<texture border="7">covers/cover-case-nofocus.png</texture>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">WideListViewCoverFocusAnim</include>
+							<include>WideListViewCoverFocusAnim</include>
 						</control>
 						<control type="image">
 							<description>Cover</description>
@@ -6790,7 +6251,7 @@
 							<texture diffuse="covers/home-panel-episode-cover-diffuse.png" background="true" fallback="pvr/DefaultPVR.png">$VAR[PosterThumb]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordersize>6</bordersize>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">WideListViewCoverFocusAnim</include>
+							<include>WideListViewCoverFocusAnim</include>
 						</control>
 						<control type="label">
 							<top>6</top>
@@ -6911,11 +6372,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6876)</visible>
-							<animation type="Focus" condition="Container(6876).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6876).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-53" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6876).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6876).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,53" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -6928,7 +6389,7 @@
 							<width>57</width>
 							<height>57</height>
 							<texture border="7">covers/cover-case-nofocus.png</texture>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">WideListViewCoverFocusAnim</include>
+							<include>WideListViewCoverFocusAnim</include>
 						</control>
 						<control type="image">
 							<description>Cover</description>
@@ -6939,7 +6400,7 @@
 							<texture diffuse="covers/home-panel-episode-cover-diffuse.png" background="true" fallback="DefaultAudio.png">$INFO[ListItem.Thumb]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordersize>6</bordersize>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">WideListViewCoverFocusAnim</include>
+							<include>WideListViewCoverFocusAnim</include>
 						</control>
 						<control type="label">
 							<top>6</top>
@@ -7052,11 +6513,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6875)</visible>
-							<animation type="Focus" condition="Container(6875).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6875).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-53" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6875).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6875).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,53" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -7069,7 +6530,7 @@
 							<width>57</width>
 							<height>57</height>
 							<texture border="7">covers/cover-case-nofocus.png</texture>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">WideListViewCoverFocusAnim</include>
+							<include>WideListViewCoverFocusAnim</include>
 						</control>
 						<control type="image">
 							<description>Cover</description>
@@ -7080,7 +6541,7 @@
 							<texture diffuse="covers/home-panel-episode-cover-diffuse.png" background="true" fallback="DefaultAudio.png">$VAR[PosterThumb]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordersize>6</bordersize>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">WideListViewCoverFocusAnim</include>
+							<include>WideListViewCoverFocusAnim</include>
 						</control>
 						<control type="label">
 							<top>6</top>
@@ -7182,11 +6643,11 @@
 								<texture border="4">views/list-focus.png</texture>
 								<aspectratio>stretch</aspectratio>
 								<visible>Control.HasFocus(6880)</visible>
-								<animation type="Focus" condition="Container(6880).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6880).OnNext" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 								</animation>
-								<animation type="Focus" condition="Container(6880).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6880).OnPrevious" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 								</animation>
@@ -7271,11 +6732,11 @@
 								<texture border="4">views/list-focus.png</texture>
 								<aspectratio>stretch</aspectratio>
 								<visible>Control.HasFocus(6881)</visible>
-								<animation type="Focus" condition="Container(6881).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6881).OnNext" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 								</animation>
-								<animation type="Focus" condition="Container(6881).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6881).OnPrevious" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 								</animation>
@@ -7368,11 +6829,11 @@
 								<texture border="4">views/list-focus.png</texture>
 								<aspectratio>stretch</aspectratio>
 								<visible>Control.HasFocus(6870)</visible>
-								<animation type="Focus" condition="Container(6870).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6870).OnNext" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,-24" time="150" tween="quadratic" easing="out"/>
 								</animation>
-								<animation type="Focus" condition="Container(6870).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+								<animation type="Focus" condition="Container(6870).OnPrevious" reversible="false">
 									<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 									<effect type="slide" start="0,24" time="150" tween="quadratic" easing="out"/>
 								</animation>
@@ -7402,7 +6863,7 @@
 	<include name="FavouritesWidget">
 		<control type="group">
 			<visible>Container(850).HasFocus(15)</visible>
-			<visible>!Window.IsActive(PlayerControls) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput) + ![!Skin.HasSetting(EnableWeatherCategory) + !Skin.HasSetting(HideWeatherHomePanel) + !Skin.HasSetting(DisableWeather) + !String.IsEmpty(Weather.Plugin)]</visible>
+			<visible>!Window.IsActive(PlayerControls) + !Window.IsActive(ShutdownMenu) + !Window.IsActive(NumericInput) + ![!Skin.HasSetting(EnableWeatherCategory) + !String.IsEmpty(Weather.Plugin)]</visible>
 			<include>HomeRightPanelOpenCloseAnim</include>
 			<left>495r</left>
 			<top>105</top>
@@ -7492,11 +6953,11 @@
 							<texture border="4">views/list-focus.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(6878)</visible>
-							<animation type="Focus" condition="Container(6878).OnNext + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6878).OnNext" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,-53" time="150" tween="quadratic" easing="out"/>
 							</animation>
-							<animation type="Focus" condition="Container(6878).OnPrevious + ![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]" reversible="false">
+							<animation type="Focus" condition="Container(6878).OnPrevious" reversible="false">
 								<effect type="Fade" start="40" end="100" time="400" tween="back" easing="in"/>
 								<effect type="slide" start="0,53" time="150" tween="quadratic" easing="out"/>
 							</animation>
@@ -7509,7 +6970,7 @@
 							<width>57</width>
 							<height>57</height>
 							<texture border="7">covers/cover-case-nofocus.png</texture>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">WideListViewCoverFocusAnim</include>
+							<include>WideListViewCoverFocusAnim</include>
 						</control>
 						<control type="image">
 							<description>Cover</description>
@@ -7520,7 +6981,7 @@
 							<texture diffuse="covers/home-panel-episode-cover-diffuse.png" background="true">$VAR[FavouritesWidgetThumb]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordersize>6</bordersize>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">WideListViewCoverFocusAnim</include>
+							<include>WideListViewCoverFocusAnim</include>
 						</control>
 						<control type="label">
 							<top>6</top>
@@ -7971,7 +7432,7 @@
 			<include>HomeLeftPanelOpenCloseAnim</include>
 
 			<control type="group">
-				<visible>PVR.HasNonRecordingTVTimer + ![PVR.IsRecordingTV + [Player.HasMedia + !Skin.HasSetting(HideNowPlayingHomePanel)]]</visible>
+				<visible>PVR.HasNonRecordingTVTimer + ![PVR.IsRecordingTV + Player.HasMedia]</visible>
 				<animation effect="slide" end="0,-175" condition="PVR.IsRecordingTV">Conditional</animation>
 				
 				<control type="image">
@@ -8136,7 +7597,7 @@
 			<include>HomeLeftPanelOpenCloseAnim</include>
 
 			<control type="group">
-				<visible>PVR.HasNonRecordingRadioTimer + ![PVR.IsRecordingRadio + [Player.HasMedia + !Skin.HasSetting(HideNowPlayingHomePanel)]]</visible>
+				<visible>PVR.HasNonRecordingRadioTimer + ![PVR.IsRecordingRadio + Player.HasMedia]</visible>
 				<animation effect="slide" end="0,-175" condition="PVR.IsRecordingRadio">Conditional</animation>
 				
 				<control type="image">

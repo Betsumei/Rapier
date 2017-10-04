@@ -40,7 +40,6 @@
 	<onunload>Skin.Reset(ExpandCustom14SubMenuSettings)</onunload>
 	<onunload>Skin.Reset(ExpandCustom15SubMenuSettings)</onunload>
 	<onunload>Skin.Reset(ExpandCustom16SubMenuSettings)</onunload>
-	<onunload>Skin.Reset(ExpandCustomCategoryIconsSettings)</onunload>
 	<!-- Backgrounds -->
 	<onunload>Skin.Reset(ExpandCustomDefaultBGSettings)</onunload>
 	<onunload>Skin.Reset(ExpandCustomMusicBGSettings)</onunload>
@@ -56,9 +55,6 @@
 	<onunload>Skin.Reset(ExpandCustomWeatherBGSettings)</onunload>
 	<onunload>Skin.Reset(ExpandCustomPVRBGSettings)</onunload>
 	<onunload>Skin.Reset(ExpandCustomPVRRadioBGSettings)</onunload>
-	<!-- Menus -->
-	<onunload>Skin.Reset(ExpandShutdownMenuSettings)</onunload>
-	<onunload>Skin.Reset(ExpandContextMenuSettings)</onunload>
 	
 	<controls>
 		<control type="group">
@@ -104,14 +100,6 @@
 					<texturenofocus />
 					<onfocus>Control.SetFocus(7)</onfocus>
 					<visible>ControlGroup(910).HasFocus | [Skin.String(SkinSettingsCategory,11) + [Control.HasFocus(997) | ControlGroup(850).HasFocus | Control.HasFocus(555)]]</visible>
-				</control>
-				
-				<control type="button" id="10">
-					<description>Configure Menus</description>
-					<texturefocus />
-					<texturenofocus />
-					<onfocus>Control.SetFocus(10)</onfocus>
-					<visible>ControlGroup(909).HasFocus | [Skin.String(SkinSettingsCategory,10) + [Control.HasFocus(911) | ControlGroup(850).HasFocus | Control.HasFocus(555)]]</visible>
 				</control>
 				
 				<control type="button" id="4">
@@ -222,19 +210,6 @@
 						<label>$LOCALIZE[31096]</label>
 						<visible>ControlGroup(910).HasFocus | [Skin.String(SkinSettingsCategory,11) + [Control.HasFocus(997) | ControlGroup(850).HasFocus | Control.HasFocus(555)]]</visible>
 					</control>
-					<control type="button" id="10">
-						<description>Configure Menus</description>
-						<include>SettingsCatBtn</include>
-						<label>$LOCALIZE[31421]</label>
-						<onfocus>Skin.SetString(SkinSettingsCategory,10)</onfocus>
-						<visible>![ControlGroup(909).HasFocus | [Skin.String(SkinSettingsCategory,10) + [Control.HasFocus(911) | ControlGroup(850).HasFocus | Control.HasFocus(555)]]]</visible>
-					</control>
-					<control type="button" id="20">
-						<description>Configure Menus</description>
-						<include>SettingsInactiveCatBtn</include>
-						<label>$LOCALIZE[31421]</label>
-						<visible>ControlGroup(909).HasFocus | [Skin.String(SkinSettingsCategory,10) + [Control.HasFocus(911) | ControlGroup(850).HasFocus | Control.HasFocus(555)]]</visible>
-					</control>
 					<control type="button" id="4">
 						<description>Backgrounds</description>
 						<include>SettingsCatBtn</include>
@@ -310,7 +285,6 @@
 					<include>HomeSkinSettings</include>
 					<include>MediaSkinSettings</include>
 					<include>ViewsSkinSettings</include>
-					<include>MenusSkinSettings</include>
 					<include>BackgroundsSkinSettings</include>
 					<include>WeatherSkinSettings</include>
 					<include>AddonsSkinSettings</include>
@@ -515,34 +489,10 @@
 							<onclick condition="System.HasAddon(weather.openweathermap.extended)">Addon.OpenSettings(weather.openweathermap.extended)</onclick>
 							<onclick condition="!System.HasAddon(weather.openweathermap.extended)">InstallAddon(weather.openweathermap.extended)</onclick>
 						</control>
-						<control type="button" id="7021">
-							<description>script.cinemavision</description>
-							<include>SettingsContentBtn</include>
-							<label>CinemaVision</label>
-							<label2>$VAR[StatusCinemaVisionVar]</label2>
-							<onclick condition="System.HasAddon(script.cinemavision)">Addon.OpenSettings(script.cinemavision)</onclick>
-							<onclick condition="!System.HasAddon(script.cinemavision)">InstallAddon(script.cinemavision)</onclick>
-						</control>
 						<control type="button" id="7027">
 							<description>Manual installation Label</description>
 							<include>SettingsHeaderBtn</include>
 							<label>$LOCALIZE[31500]</label>
-						</control>
-						<control type="button" id="7017">
-							<description>script.tvtunes</description>
-							<include>SettingsContentBtn</include>
-							<label>TvTunes</label>
-							<label2>$VAR[StatusTVTunesVar]</label2>
-							<onclick condition="System.HasAddon(script.tvtunes)">Addon.OpenSettings(script.tvtunes)</onclick>
-							<onclick condition="!System.HasAddon(script.tvtunes)">Notification(TvTunes,$LOCALIZE[31498],4500,)</onclick>
-						</control>
-						<control type="button" id="7018">
-							<description>script.videoextras</description>
-							<include>SettingsContentBtn</include>
-							<label>VideoExtras</label>
-							<label2>$VAR[StatusVideoExtrasVar]</label2>
-							<onclick condition="System.HasAddon(script.videoextras)">Addon.OpenSettings(script.videoextras)</onclick>
-							<onclick condition="!System.HasAddon(script.videoextras)">Notification(VideoExtras,$LOCALIZE[31498],4500,)</onclick>
 						</control>
 						<control type="button" id="7028">
 							<description>script.libraryeditor</description>

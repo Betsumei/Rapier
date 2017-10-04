@@ -16,7 +16,7 @@
 			<include>BackgroundMusicFanart</include>
 			<include>BackgroundVideoFanart</include>
 			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)">BackgroundVideoPlaying</include>
-			<include condition="!Skin.HasSetting(DisableMusicPlayingBG)">BackgroundMusicPlaying</include>
+			<include>BackgroundMusicPlaying</include>
 			<include>BackgroundOpenCloseAnim</include>
 		</control>
 
@@ -34,7 +34,6 @@
 		
 		<control type="group">
 			<description>Top Bar Area</description>
-			<visible>![System.IdleTime(3) + !Control.IsVisible(505) + Skin.HasSetting(HideTopBar) + !Control.HasFocus(555)]</visible>
 			<depth>DepthTopBar</depth>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>

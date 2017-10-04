@@ -16,7 +16,7 @@
 			| Skin.String(CustomMusicBGType,4)] + Skin.HasSetting(ApplyAllMusicCustomBG)">BackgroundMusic</include>
 			<include>BackgroundMusicFanart</include>
 			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)">BackgroundVideoPlaying</include>
-			<include condition="!Skin.HasSetting(DisableMusicPlayingBG)">BackgroundMusicPlaying</include>
+			<include>BackgroundMusicPlaying</include>
 			<include>BackgroundOpenCloseAnim</include>
 			<include>FSMediaInfoBackgroundDim2</include>
 		</control>
@@ -188,7 +188,7 @@
 						<aspectratio>stretch</aspectratio>
 						<visible>Control.HasFocus(901)</visible>
 						<include>ListViewSelectFadeAnim</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">MediaInfoListScrollAnim2</include>
+						<include>MediaInfoListScrollAnim2</include>
 					</control>
 					<control type="label">
 						<left>5</left>

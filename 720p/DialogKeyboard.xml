@@ -43,7 +43,7 @@
 					<ondown>901</ondown>
 					<onback>noop</onback>
 					<orientation>vertical</orientation>
-					<visible>System.HasAddon(plugin.program.autocompletion) + !Skin.HasSetting(EnableKeyboardAutocompletions)</visible>
+					<visible>System.HasAddon(plugin.program.autocompletion)</visible>
 					<itemlayout height="37" width="233">
 						<control type="image">
 							<width>231</width>

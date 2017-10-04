@@ -278,21 +278,9 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<info>ListItem.Label2</info>
-						<visible>Skin.HasSetting(DoNotUseStarRatingVideos)</visible>
 					</control>
 					<control type="group">
 						<visible>!ListItem.IsParentFolder</visible>
-						<control type="image">
-							<description>Star Rating</description>
-							<left>395</left>
-							<top>10</top>
-							<width>100</width>
-							<height>16</height>
-							<texture background="true">$VAR[StarRating]</texture>
-							<aspectratio align="right">keep</aspectratio>
-							<visible>!Skin.HasSetting(DoNotUseStarRatingVideos) + !String.IsEmpty(ListItem.Rating)</visible>
-							<include>StarRatingFadeAnim</include>
-						</control>
 						<control type="image">
 							<description>Quality</description>
 							<left>5</left>
@@ -343,7 +331,7 @@
 						<aspectratio>stretch</aspectratio>
 						<visible>Control.HasFocus(530)</visible>
 						<include>ListViewSelectFadeAnim</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewScrollAnim</include>
+						<include>ListViewScrollAnim</include>
 					</control>
 					<control type="image">
 						<width>505</width>
@@ -388,21 +376,9 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<info>ListItem.Label2</info>
-							<visible>Skin.HasSetting(DoNotUseStarRatingVideos)</visible>
 						</control> 
 						<control type="group">
 							<visible>!ListItem.IsParentFolder</visible>
-							<control type="image">
-								<description>Star Rating</description>
-								<left>395</left>
-								<top>10</top>
-								<width>100</width>
-								<height>16</height>
-								<texture background="true">$VAR[StarRating]</texture>
-								<aspectratio align="right">keep</aspectratio>
-								<visible>!Skin.HasSetting(DoNotUseStarRatingVideos) + !String.IsEmpty(ListItem.Rating)</visible>
-								<include>StarRatingFadeAnim</include>
-							</control>
 							<control type="image">
 								<description>Quality</description>
 								<left>5</left>
@@ -628,7 +604,7 @@
 				<top>BottomPaneOffsetY</top>
 				<!--<include>InfoPaneImage</include>-->
 				<include>InfoPaneMediaDetails</include>
-				<include condition="!Skin.HasSetting(DisableTVShowsLogo)">InfoPaneClearLogo</include>
+				<include>InfoPaneClearLogo</include>
 				<include>BottomPaneOpenCloseAnim</include>
 			</control>
 
@@ -677,21 +653,9 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<info>ListItem.Label2</info>
-				<visible>Skin.HasSetting(DoNotUseStarRatingVideos)</visible>
 			</control>
 			<control type="group">
 				<visible>!ListItem.IsParentFolder</visible>
-				<control type="image">
-					<description>Star Rating</description>
-					<left>520</left>
-					<top>10</top>
-					<width>100</width>
-					<height>16</height>
-					<texture background="true">$VAR[StarRating]</texture>
-					<aspectratio align="right">keep</aspectratio>
-					<visible>!Skin.HasSetting(DoNotUseStarRatingVideos) + !String.IsEmpty(ListItem.Rating)</visible>
-					<include>StarRatingFadeAnim</include>
-				</control>
 				<control type="image">
 					<description>Quality</description>
 					<left>5</left>
@@ -745,7 +709,7 @@
 				<aspectratio>stretch</aspectratio>
 				<visible>Control.HasFocus(531)</visible>
 				<include>ListViewSelectFadeAnim</include>
-				<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewScrollAnim</include>
+				<include>ListViewScrollAnim</include>
 			</control>
 			<control type="image">
 				<width>630</width>
@@ -790,21 +754,9 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<info>ListItem.Label2</info>
-					<visible>Skin.HasSetting(DoNotUseStarRatingVideos)</visible>
 				</control>
 				<control type="group">
 					<visible>!ListItem.IsParentFolder</visible>
-					<control type="image">
-						<description>Star Rating</description>
-						<left>520</left>
-						<top>10</top>
-						<width>100</width>
-						<height>16</height>
-						<texture background="true">$VAR[StarRating]</texture>
-						<aspectratio align="right">keep</aspectratio>
-						<visible>!Skin.HasSetting(DoNotUseStarRatingVideos) + !String.IsEmpty(ListItem.Rating)</visible>
-						<include>StarRatingFadeAnim</include>
-					</control>
 					<control type="image">
 						<description>Quality</description>
 						<left>5</left>
@@ -914,21 +866,10 @@
 					<shadowcolor>ShadowColor</shadowcolor>
 					<label>$INFO[ListItem.Rating]</label>
 					<align>right</align>
-					<visible>Skin.HasSetting(DoNotUseStarRatingVideos) + !String.IsEmpty(ListItem.Rating)</visible>
-				</control>
-				<control type="image">
-					<description>Star Rating</description>
-					<left>520</left>
-					<top>16</top>
-					<width>100</width>
-					<height>16</height>
-					<texture background="true">$VAR[StarRating]</texture>
-					<aspectratio align="right">keep</aspectratio>
-					<visible>!Skin.HasSetting(DoNotUseStarRatingVideos) + !String.IsEmpty(ListItem.Rating)</visible>
-					<include>StarRatingFadeAnim</include>
+					<visible>!String.IsEmpty(ListItem.Rating)</visible>
 				</control>
 				<control type="group">
-					<visible>!Skin.HasSetting(HideVideosListInfo2Overlay) + !ListItem.IsFolder</visible>
+					<visible>!ListItem.IsFolder</visible>
 					<control type="image">
 						<description>Quality</description>
 						<left>596</left>
@@ -983,8 +924,8 @@
 				<aspectratio>stretch</aspectratio>
 				<visible>Control.HasFocus(531)</visible>
 				<include>ListViewSelectFadeAnim</include>
-				<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)] + ![Skin.String(VideosListInfo2Style,) | Skin.String(VideosListInfo2Style,3)]">ListViewScrollAnim2</include>
-				<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)] + [Skin.String(VideosListInfo2Style,) | Skin.String(VideosListInfo2Style,3)]">ListViewScrollAnim</include>
+				<include condition="![Skin.String(VideosListInfo2Style,) | Skin.String(VideosListInfo2Style,3)]">ListViewScrollAnim2</include>
+				<include condition="[Skin.String(VideosListInfo2Style,) | Skin.String(VideosListInfo2Style,3)]">ListViewScrollAnim</include>
 			</control>
 			<control type="image">
 				<width>630</width>
@@ -1003,7 +944,7 @@
 				<bordersize>5</bordersize>
 				<texture background="true">$INFO[ListItem.Thumb]</texture>
 				<aspectratio>scale</aspectratio>
-				<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+				<include>ListViewCoverFocusAnim</include>
 			</control>
 			<control type="image">
 				<description>Default Cover</description>
@@ -1014,7 +955,7 @@
 				<texture background="true">$INFO[ListItem.ActualIcon]</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>String.IsEmpty(ListItem.Thumb)</visible>
-				<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+				<include>ListViewCoverFocusAnim</include>
 			</control>
 			<control type="group">
 				<include>ListViewFocusAnim</include>
@@ -1051,21 +992,10 @@
 						<shadowcolor>ShadowColor</shadowcolor>
 						<label>$INFO[ListItem.Rating]</label>
 						<align>right</align>
-						<visible>Skin.HasSetting(DoNotUseStarRatingVideos) + !String.IsEmpty(ListItem.Rating)</visible>
-					</control>
-					<control type="image">
-						<description>Star Rating</description>
-						<left>520</left>
-						<top>16</top>
-						<width>100</width>
-						<height>16</height>
-						<texture background="true">$VAR[StarRating]</texture>
-						<aspectratio align="right">keep</aspectratio>
-						<visible>!Skin.HasSetting(DoNotUseStarRatingVideos) + !String.IsEmpty(ListItem.Rating)</visible>
-						<include>StarRatingFadeAnim</include>
+						<visible>!String.IsEmpty(ListItem.Rating)</visible>
 					</control>
 					<control type="group">
-						<visible>!Skin.HasSetting(HideVideosListInfo2Overlay) + !ListItem.IsFolder</visible>
+						<visible>!ListItem.IsFolder</visible>
 						<control type="image">
 							<description>Quality</description>
 							<left>596</left>
@@ -1315,7 +1245,6 @@
 							<height>24</height>
 							<texture background="true">$INFO[ListItem.Overlay]</texture>
 							<aspectratio>keep</aspectratio>
-							<visible>!Skin.HasSetting(HideVideosThumbsInfoOverlay)</visible>
 						</control>
 						<control type="image">
 							<description>Watched Partial</description>
@@ -1325,7 +1254,7 @@
 							<height>24</height>
 							<texture background="true">$VAR[WatchedPartial]</texture>
 							<aspectratio>keep</aspectratio>
-							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideVideosThumbsInfoOverlay)</visible>
+							<visible>ListItem.IsResumable + !String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
 						</control>
 					</control>
 				</itemlayout>
@@ -1335,7 +1264,7 @@
 						<top>-2</top>
 						<include>VideosThumbsStyleCoverImage</include>
 						<include>VideosThumbsStyleOverlayImage</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">VideosThumbsStyleTopLeftCornerFocusAnim</include>
+						<include>VideosThumbsStyleTopLeftCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="258" height="171" condition="Container.Column(1) + Container.Row(0)">
@@ -1344,7 +1273,7 @@
 						<top>-2</top>
 						<include>VideosThumbsStyleCoverImage</include>
 						<include>VideosThumbsStyleOverlayImage</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">DVDThumbsStyleTopEdgeFocusAnim</include>
+						<include>DVDThumbsStyleTopEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="258" height="171" condition="Container.Column(2) + Container.Row(0)">
@@ -1353,7 +1282,7 @@
 						<top>-2</top>
 						<include>VideosThumbsStyleCoverImage</include>
 						<include>VideosThumbsStyleOverlayImage</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">VideosThumbsStyleTopRightCornerFocusAnim</include>
+						<include>VideosThumbsStyleTopRightCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="258" height="171" condition="Container.Column(0) + Container.Row(1)">
@@ -1362,7 +1291,7 @@
 						<top>-2</top>
 						<include>VideosThumbsStyleCoverImage</include>
 						<include>VideosThumbsStyleOverlayImage</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">VideosThumbsStyleLeftEdgeFocusAnim</include>
+						<include>VideosThumbsStyleLeftEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="258" height="171" condition="Container.Column(1) + Container.Row(1)">
@@ -1371,7 +1300,7 @@
 						<top>-2</top>
 						<include>VideosThumbsStyleCoverImage</include>
 						<include>VideosThumbsStyleOverlayImage</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">DVDThumbsStyleMidRowFocusAnim</include>
+						<include>DVDThumbsStyleMidRowFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="258" height="171" condition="Container.Column(2) + Container.Row(1)">
@@ -1380,7 +1309,7 @@
 						<top>-2</top>
 						<include>VideosThumbsStyleCoverImage</include>
 						<include>VideosThumbsStyleOverlayImage</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">VideosThumbsStyleRightEdgeFocusAnim</include>
+						<include>VideosThumbsStyleRightEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="258" height="171" condition="Container.Column(0) + Container.Row(2)">
@@ -1389,7 +1318,7 @@
 						<top>-2</top>
 						<include>VideosThumbsStyleCoverImage</include>
 						<include>VideosThumbsStyleOverlayImage</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">VideosThumbsStyleBottomLeftCornerFocusAnim</include>
+						<include>VideosThumbsStyleBottomLeftCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="258" height="171" condition="Container.Column(1) + Container.Row(2)">
@@ -1398,7 +1327,7 @@
 						<top>-2</top>
 						<include>VideosThumbsStyleCoverImage</include>
 						<include>VideosThumbsStyleOverlayImage</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">DVDThumbsStyleBottomEdgeFocusAnim</include>
+						<include>DVDThumbsStyleBottomEdgeFocusAnim</include>
 					</control>
 				</focusedlayout>
 				<focusedlayout width="258" height="171" condition="Container.Column(2) + Container.Row(2)">
@@ -1407,7 +1336,7 @@
 						<top>-2</top>
 						<include>VideosThumbsStyleCoverImage</include>
 						<include>VideosThumbsStyleOverlayImage</include>
-						<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">VideosThumbsStyleBottomRightCornerFocusAnim</include>
+						<include>VideosThumbsStyleBottomRightCornerFocusAnim</include>
 					</control>
 				</focusedlayout>
 			</control>
@@ -1429,20 +1358,10 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 					</control>
 					
-					<control type="image">
-						<left>590</left>
-						<top>24</top>
-						<width>100</width>
-						<height>16</height>
-						<texture background="true">$VAR[StarRating]</texture>
-						<aspectratio>keep</aspectratio>
-						<include>MediaFlagFadeAnim</include>
-						<visible>!Skin.HasSetting(DoNotUseStarRatingVideos) + !String.IsEmpty(ListItem.Rating)</visible>
-					</control>
 					<control type="label">
 						<include>InfoPaneItemTitle2</include>
 						<label>$INFO[ListItem.Rating]</label>
-						<visible>Skin.HasSetting(DoNotUseStarRatingVideos) + !String.IsEmpty(ListItem.Rating)</visible>
+						<visible>!String.IsEmpty(ListItem.Rating)</visible>
 					</control>
 				</control>
 			</control>

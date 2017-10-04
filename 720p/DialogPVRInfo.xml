@@ -152,7 +152,7 @@
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(901)</visible>
 							<include>ListViewSelectFadeAnim</include>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">MediaInfoListScrollAnim2</include>
+							<include>MediaInfoListScrollAnim2</include>
 						</control>
 						<control type="label">
 							<left>5</left>
@@ -286,7 +286,6 @@
 					<include>AudioMediaFlags</include>
 					<include>AspectMediaFlags</include>
 					<include>SubtitleMediaFlags</include>
-					<include condition="!Skin.HasSetting(HideRatingMediaFlag)">RatingMediaFlags</include>
 					<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
 				</control>
 				

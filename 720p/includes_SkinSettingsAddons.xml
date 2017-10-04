@@ -64,7 +64,7 @@
 				<textoffsetx>20</textoffsetx>
 				<include>SettingsContentBtn</include>
 				<label>$LOCALIZE[593]</label>
-				<onclick condition="System.HasAddon(script.artwork.downloader)">RunScript(script.artwork.downloader, mediatype=movie, poster, fanart, extrafanart, extrathumbs, clearlogo, clearart, thumb)</onclick>
+				<onclick condition="System.HasAddon(script.artwork.downloader)">RunScript(script.artwork.downloader, mediatype=movie, poster, fanart, extrafanart, clearlogo, clearart, thumb)</onclick>
 				<onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
 				<visible>Skin.HasSetting(ShowMoviesArtworkDownloaderSettings)</visible>
 			</control>
@@ -92,15 +92,6 @@
 				<include>SettingsContentBtn</include>
 				<label>$LOCALIZE[31015]</label>
 				<onclick condition="System.HasAddon(script.artwork.downloader)">RunScript(script.artwork.downloader, mode=custom, mediatype=movie, extrafanart)</onclick>
-				<onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
-				<visible>Skin.HasSetting(ShowMoviesArtworkDownloaderSettings)</visible>
-			</control>
-			<control type="button" id="5015">
-				<description>Run Artwork Downloader (Movies) (ExtraThumbs)</description>
-				<textoffsetx>20</textoffsetx>
-				<include>SettingsContentBtn</include>
-				<label>$LOCALIZE[31014]</label>
-				<onclick condition="System.HasAddon(script.artwork.downloader)">RunScript(script.artwork.downloader, mode=custom, mediatype=movie, extrathumbs)</onclick>
 				<onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
 				<visible>Skin.HasSetting(ShowMoviesArtworkDownloaderSettings)</visible>
 			</control>
@@ -144,7 +135,7 @@
 				<textoffsetx>20</textoffsetx>
 				<include>SettingsContentBtn</include>
 				<label>$LOCALIZE[593]</label>
-				<onclick condition="System.HasAddon(script.artwork.downloader)">RunScript(script.artwork.downloader, mediatype=tvshow, poster, seasonposter, fanart, extrafanart, extrathumbs, clearlogo, clearart, tvthumb, banner, seasonbanner</onclick>
+				<onclick condition="System.HasAddon(script.artwork.downloader)">RunScript(script.artwork.downloader, mediatype=tvshow, poster, seasonposter, fanart, extrafanart, clearlogo, clearart, tvthumb</onclick>
 				<onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
 				<visible>Skin.HasSetting(ShowTVShowsArtworkDownloaderSettings)</visible>
 			</control>
@@ -171,7 +162,7 @@
 				<textoffsetx>20</textoffsetx>
 				<include>SettingsContentBtn</include>
 				<label>$LOCALIZE[31108]</label>
-				<onclick condition="System.HasAddon(script.artwork.downloader)">RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, banner)</onclick>
+				<onclick condition="System.HasAddon(script.artwork.downloader)">RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow)</onclick>
 				<onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
 				<visible>Skin.HasSetting(ShowTVShowsArtworkDownloaderSettings)</visible>
 			</control>
@@ -199,15 +190,6 @@
 				<include>SettingsContentBtn</include>
 				<label>$LOCALIZE[31015]</label>
 				<onclick condition="System.HasAddon(script.artwork.downloader)">RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, extrafanart)</onclick>
-				<onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
-				<visible>Skin.HasSetting(ShowTVShowsArtworkDownloaderSettings)</visible>
-			</control>
-			<control type="button" id="5059">
-				<description>Run Artwork Downloader (TVShows) (ExtraThumbs)</description>
-				<textoffsetx>20</textoffsetx>
-				<include>SettingsContentBtn</include>
-				<label>$LOCALIZE[31014]</label>
-				<onclick condition="System.HasAddon(script.artwork.downloader)">RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, extrathumbs)</onclick>
 				<onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
 				<visible>Skin.HasSetting(ShowTVShowsArtworkDownloaderSettings)</visible>
 			</control>

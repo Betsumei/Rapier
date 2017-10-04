@@ -363,7 +363,7 @@
 			<aspectratio>stretch</aspectratio>
 			<visible>[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml)] + Control.HasFocus(50)</visible>
 			<include>ListViewSelectFadeAnim</include>
-			<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewScrollAnim</include>
+			<include>ListViewScrollAnim</include>
 		</control>
 
 		<control type="image">

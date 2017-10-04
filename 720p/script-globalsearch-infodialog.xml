@@ -301,7 +301,7 @@
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(110)</visible>
 							<include>ListViewSelectFadeAnim</include>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">MediaInfoListScrollAnim</include>
+							<include>MediaInfoListScrollAnim</include>
 						</control>
 						<control type="label">
 							<left>5</left>
@@ -671,7 +671,7 @@
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(140)</visible>
 							<include>ListViewSelectFadeAnim</include>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">MediaInfoListScrollAnim</include>
+							<include>MediaInfoListScrollAnim</include>
 						</control>
 						<control type="label">
 							<left>5</left>
@@ -818,7 +818,7 @@
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(150)</visible>
 							<include>ListViewSelectFadeAnim</include>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">MediaInfoListScrollAnim</include>
+							<include>MediaInfoListScrollAnim</include>
 						</control>
 						<control type="label">
 							<left>5</left>
@@ -1089,7 +1089,7 @@
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(170)</visible>
 							<include>ListViewSelectFadeAnim</include>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">MediaInfoListScrollAnim</include>
+							<include>MediaInfoListScrollAnim</include>
 						</control>
 						<control type="label">
 							<left>5</left>
@@ -1234,7 +1234,7 @@
 							<aspectratio>stretch</aspectratio>
 							<visible>Control.HasFocus(180)</visible>
 							<include>ListViewSelectFadeAnim</include>
-							<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">MediaInfoListScrollAnim</include>
+							<include>MediaInfoListScrollAnim</include>
 						</control>
 						<control type="label">
 							<left>5</left>
@@ -1468,7 +1468,7 @@
 						<top>650</top>
 						<width>58</width>
 						<height>35</height>
-						<texture border="6">flagging/$VAR[MediaFlagTheme]/flag-bg.png</texture>
+						<texture border="6">flagging/default/flag-bg.png</texture>
 						<include>MediaFlagFadeAnim</include>
 						<visible>!String.IsEmpty(Control.GetLabel(691))</visible>
 					</control>
@@ -1514,7 +1514,6 @@
 					<include>GlobalSearchVideoCodecMediaFlags</include>
 					<include>GlobalSearchAudioMediaFlags</include>
 					<include>GlobalSearchAspectMediaFlags</include>
-					<include condition="!Skin.HasSetting(HideRatingMediaFlag)">GlobalSearchRatingMediaFlags</include>
 					<visible>Control.IsVisible(110)</visible>
 				</control>
 				

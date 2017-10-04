@@ -2,10 +2,6 @@
 <window>
     <defaultcontrol always="true">987</defaultcontrol>
 	<menucontrol>987</menucontrol>
-	<onload condition="System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
-	<onload condition="String.IsEqual(Window.Property(type),movie)">SetProperty("TvTunesSupported", "Movies")</onload>
-	<onload condition="String.IsEqual(Window.Property(type),tvshow) | String.IsEqual(Window.Property(type),season) | String.IsEqual(Window.Property(type),episode)">SetProperty("TvTunesSupported", "TvShows")</onload>
-	<onload condition="System.HasAddon(script.videoextras) + !String.IsEmpty(Window.Property(DBID))">RunScript(script.videoextras,check,"$INFO[Window.Property(FilenameAndPath)]")</onload>
 	<onload>Skin.Reset(ExtendedVideoInfo)</onload>
 	<onunload>Skin.Reset(ExtendedInfoDialog)</onunload>
 	<onunload condition="!String.IsEmpty(Skin.String(ExtendedInfoTrailerButton))">Skin.Reset(ExtendedInfoTrailerButton)</onunload>
@@ -111,7 +107,6 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 						<include>FSMediaInfoOpenCloseAnim</include>
-						<animation effect="slide" end="647,-365" condition="Container.Content(TVShows) + !Skin.HasSetting(UseTVShowsPosterCover)">Conditional</animation>
 						<visible>!String.IsEmpty(Window.Property(DBID)) + !String.IsEqual(ListItem.Property(UnWatchedEpisodes),0) + Integer.IsLessOrEqual(ListItem.Property(UnWatchedEpisodes),99) + Container.Content(TVShows)</visible>
 					</control>
 					<control type="label">
@@ -126,7 +121,6 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 						<include>FSMediaInfoOpenCloseAnim</include>
-						<animation effect="slide" end="647,-365" condition="Container.Content(TVShows) + !Skin.HasSetting(UseTVShowsPosterCover)">Conditional</animation>
 						<visible>!String.IsEmpty(Window.Property(DBID)) + !String.IsEqual(ListItem.Property(UnWatchedEpisodes),0) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99) + Container.Content(TVShows)</visible>
 					</control>
 					<control type="image">
@@ -139,7 +133,6 @@
 						<texture background="true">OverlayClean.png</texture>
 						<aspectratio>keep</aspectratio>
 						<include>FSMediaInfoOpenCloseAnim</include>
-						<animation effect="slide" end="647,-365" condition="Container.Content(TVShows) + !Skin.HasSetting(UseTVShowsPosterCover)">Conditional</animation>
 						<visible>!String.IsEmpty(Window.Property(DBID)) + !String.IsEqual(ListItem.Property(UnWatchedEpisodes),0) + !String.IsEmpty(ListItem.Property(UnWatchedEpisodes)) + Container.Content(TVShows)</visible>
 					</control>-->
 					<control type="image">
@@ -340,7 +333,7 @@
 								<aspectratio>stretch</aspectratio>
 								<visible>Control.HasFocus(901)</visible>
 								<include>ListViewSelectFadeAnim</include>
-								<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">MediaInfoListScrollAnim</include>
+								<include>MediaInfoListScrollAnim</include>
 							</control>
 							<control type="label">
 								<left>5</left>
@@ -479,7 +472,6 @@
 						<include>ExtendedInfoVideoCodecMediaFlags</include>
 						<include>ExtendedInfoAudioMediaFlags</include>
 						<include>ExtendedInfoAspectMediaFlags</include>
-						<include condition="!Skin.HasSetting(HideRatingMediaFlag)">ExtendedInfoRatingMediaFlags</include>
 					</control>
 				</control>
 				

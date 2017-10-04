@@ -297,7 +297,6 @@
 				<label>[UPPERCASE]$INFO[Control.GetLabel(2)][/UPPERCASE]</label>
 				<onclick>ActivateWindow(1112)</onclick>
 				<onclick>Control.SetFocus(500)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="351">
 				<include>MenuBarSeparator</include>
@@ -315,34 +314,20 @@
 				<onclick condition="Control.IsVisible(61)">Skin.SetString(CurrentViewMode,61)</onclick>
 				<onclick condition="Control.IsVisible(62)">Skin.SetString(CurrentViewMode,62)</onclick>
 				<onclick condition="Control.IsVisible(63)">Skin.SetString(CurrentViewMode,63)</onclick>
-				<onclick condition="Control.IsVisible(64)">Skin.SetString(CurrentViewMode,64)</onclick>
-				<onclick condition="Control.IsVisible(65)">Skin.SetString(CurrentViewMode,65)</onclick>
-				<onclick condition="Control.IsVisible(66)">Skin.SetString(CurrentViewMode,66)</onclick>
 				<onclick condition="Control.IsVisible(67)">Skin.SetString(CurrentViewMode,67)</onclick>
-				<onclick condition="Control.IsVisible(68)">Skin.SetString(CurrentViewMode,68)</onclick>
-				<onclick condition="Control.IsVisible(69)">Skin.SetString(CurrentViewMode,69)</onclick>
-				<onclick condition="Control.IsVisible(70)">Skin.SetString(CurrentViewMode,70)</onclick>
 				<onclick condition="Control.IsVisible(73)">Skin.SetString(CurrentViewMode,73)</onclick>
 				<onclick condition="Control.IsVisible(91)">Skin.SetString(CurrentViewMode,91)</onclick>
-				<onclick condition="Control.IsVisible(93)">Skin.SetString(CurrentViewMode,93)</onclick>
 				<onclick condition="Control.IsVisible(94)">Skin.SetString(CurrentViewMode,94)</onclick>
 				<onclick condition="Control.IsVisible(95)">Skin.SetString(CurrentViewMode,95)</onclick>
 				<onclick condition="Control.IsVisible(96)">Skin.SetString(CurrentViewMode,96)</onclick>
-				<onclick condition="Control.IsVisible(97)">Skin.SetString(CurrentViewMode,97)</onclick>
-				<onclick condition="Control.IsVisible(599)">Skin.SetString(CurrentViewMode,599)</onclick>
-				<onclick condition="Control.IsVisible(100)">Skin.SetString(CurrentViewMode,100)</onclick>
 				<onclick condition="Control.IsVisible(530)">Skin.SetString(CurrentViewMode,530)</onclick>
 				<onclick condition="Control.IsVisible(531)">Skin.SetString(CurrentViewMode,531)</onclick>
 				<onclick condition="Control.IsVisible(532)">Skin.SetString(CurrentViewMode,532)</onclick>
-				<onclick condition="Control.IsVisible(577)">Skin.SetString(CurrentViewMode,577)</onclick>
 				<onclick condition="Control.IsVisible(578)">Skin.SetString(CurrentViewMode,578)</onclick>
 				<onclick condition="Control.IsVisible(579)">Skin.SetString(CurrentViewMode,579)</onclick>
 				<onclick condition="Control.IsVisible(580)">Skin.SetString(CurrentViewMode,580)</onclick>
-				<onclick condition="Control.IsVisible(583)">Skin.SetString(CurrentViewMode,583)</onclick>
 				<onclick condition="Control.IsVisible(585)">Skin.SetString(CurrentViewMode,585)</onclick>
-				<onclick condition="Control.IsVisible(586)">Skin.SetString(CurrentViewMode,586)</onclick>
 				<onclick condition="Control.IsVisible(587)">Skin.SetString(CurrentViewMode,587)</onclick>
-				<onclick condition="Control.IsVisible(588)">Skin.SetString(CurrentViewMode,588)</onclick>
 				<onclick condition="Control.IsVisible(589)">Skin.SetString(CurrentViewMode,589)</onclick>
 				<onclick condition="Control.IsVisible(590)">Skin.SetString(CurrentViewMode,590)</onclick>
 				<onclick condition="Control.IsVisible(591)">Skin.SetString(CurrentViewMode,591)</onclick>
@@ -355,7 +340,6 @@
 				<onclick condition="Control.IsVisible(598)">Skin.SetString(CurrentViewMode,598)</onclick>
 				<onclick>ActivateWindow(1113)</onclick>
 				<onclick>Control.SetFocus(500)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="438">
 				<include>MenuBarSeparator</include>
@@ -401,7 +385,6 @@
 				<onclick condition="Window.IsVisible(Videos) | Window.IsVisible(Videos,Files)">ActivateWindow(MediaSettings,video)</onclick>
 				<onclick condition="Window.IsVisible(Music)">ActivateWindow(MediaSettings,music)</onclick>
 				<onclick condition="Window.IsVisible(Pictures)">ActivateWindow(MediaSettings,pictures)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>Window.IsVisible(Videos) | Window.IsVisible(Videos,Files) | Window.IsVisible(Music) | Window.IsVisible(Pictures)</visible>
 			</control>
 			<control type="image" id="370">
@@ -528,7 +511,6 @@
 				<altlabel>[UPPERCASE]$LOCALIZE[13353][/UPPERCASE]</altlabel>
 				<alttexturenofocus />
 				<usealttexture>library.isscanningvideo | library.isscanningmusic</usealttexture>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>Window.IsVisible(Videos) | Window.IsActive(Music)</visible>
 			</control>
 			<control type="image" id="117">
@@ -584,7 +566,6 @@
 				<include>MenuBarBtn</include>
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[190][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>[Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)] + !Control.IsVisible(580)</visible>
 			</control>
 			<control type="image" id="111">
@@ -596,7 +577,6 @@
 				<include>MenuBarBtn</include>
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[192][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>[Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)] + !Control.IsVisible(580)</visible>
 			</control>
 			<control type="image" id="112">
@@ -644,7 +624,6 @@
 				<onclick condition="System.HasAddon(plugin.library.node.editor) + Window.IsActive(Videos)">ActivateWindow(programs,plugin://plugin.library.node.editor/?ltype=video,return)</onclick>
 				<onclick condition="System.HasAddon(plugin.library.node.editor) + Window.IsActive(Music)">ActivateWindow(programs,plugin://plugin.library.node.editor/?ltype=music,return)</onclick>
 				<onclick condition="!System.HasAddon(plugin.library.node.editor)">InstallAddon(plugin.library.node.editor)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>Container.Content() + String.IsEmpty(Container.PluginName)</visible>
 			</control>
 			<control type="image" id="121">
@@ -660,15 +639,13 @@
 				<onclick condition="Window.IsActive(Programs)">ActivateWindow(addonbrowser,addons://all/xbmc.addon.executable/,return)</onclick>
 				<onclick condition="Window.IsActive(Games)">ActivateWindow(addonbrowser,addons://all/category.gameaddons/,return)</onclick>
 				<onclick condition="Window.IsActive(Videos)">ActivateWindow(addonbrowser,addons://all/xbmc.addon.video/,return)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>Container.Content(Addons) | Container.Content(Games)</visible>
 			</control>
 			<control type="button" id="124">
 				<description>Add-on Settings</description>
 				<include>MenuBarBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[10140][/UPPERCASE]</label>
-				<onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick> 
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
+				<onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
 				<visible>!String.IsEmpty(Container.PluginName)</visible>
 			</control>
 			<control type="image" id="123">
@@ -728,7 +705,6 @@
 				<textwidth>164</textwidth>
 				<include>MenuBarBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[24034][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="120">
 				<include>MenuBarSeparator</include>
@@ -739,7 +715,6 @@
 				<textwidth>133</textwidth>
 				<include>MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[25001][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="121">
 				<include>MenuBarSeparator</include>
@@ -750,7 +725,6 @@
 				<textwidth>133</textwidth>
 				<include>MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[24999][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="122">
 				<include>MenuBarSeparator</include>
@@ -761,7 +735,6 @@
 				<textwidth>164</textwidth>
 				<include>MenuBarBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[10004][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="123">
 				<include>MenuBarSeparator</include>
@@ -936,7 +909,6 @@
 				<include>MenuBarArrowBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[5][/UPPERCASE]</label>
 				<onclick>ActivateWindow(1109)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="118">
 				<include>MenuBarSeparator</include>
@@ -1081,7 +1053,6 @@
 				<include>MenuBarArrowBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[5][/UPPERCASE]</label>
 				<onclick>ActivateWindow(1109)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 		</control>
 	</include>
@@ -1208,7 +1179,6 @@
 				<label>[UPPERCASE]$LOCALIZE[14018][/UPPERCASE]</label>
 				<onclick>ActivateWindow(1114)</onclick>
 				<onclick>Control.SetFocus(500)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 		</control>
 	</include>
@@ -1283,7 +1253,6 @@
 				<textwidth>136</textwidth>
 				<include>MenuBarRadioBtn</include>
 				<label>19270</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
 			</control>
 			<control type="image" id="105">
@@ -1296,7 +1265,6 @@
 				<textwidth>136</textwidth>
 				<include>MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[19051][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>Window.IsActive(MyPVRChannels.xml)</visible>
 			</control>
 			<control type="radiobutton" id="7">
@@ -1305,7 +1273,6 @@
 				<textwidth>136</textwidth>
 				<include>MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[19184][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
 			</control>
 			<control type="radiobutton" id="8">
@@ -1314,7 +1281,6 @@
 				<textwidth>136</textwidth>
 				<include>MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[19077][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>Window.IsActive(MyPVRTimers.xml)</visible>
 			</control>
 			<control type="image" id="106">
@@ -1327,7 +1293,6 @@
 				<label>[UPPERCASE]$LOCALIZE[10004][/UPPERCASE]</label>
 				<onclick condition="Window.IsActive(MyPVRGuide.xml)">ActivateWindow(PVRSettings,epg)</onclick>
 				<onclick condition="!Window.IsActive(MyPVRGuide.xml)">ActivateWindow(PVRSettings)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>!Window.IsActive(MyPVRRecordings.xml)</visible>
 			</control>
 			<control type="button" id="41">
@@ -1337,7 +1302,6 @@
 				<include>MenuBarBigBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[10004][/UPPERCASE]</label>
 				<onclick>ActivateWindow(PVRSettings,pvrrecord)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
 			</control>
 			<control type="image" id="107">
@@ -1530,7 +1494,6 @@
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[31969][/UPPERCASE]</label>
 				<onclick>RunScript(script.tv.show.next.aired,force=True)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="353">
 				<include>MenuBarSeparator</include>
@@ -1541,7 +1504,6 @@
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[31970][/UPPERCASE]</label>
 				<onclick>RunScript(script.tv.show.next.aired,reset=True)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="354">
 				<include>MenuBarSeparator</include>
@@ -1551,7 +1513,6 @@
 				<include>MenuBarBigBtn</include>
 				<align>center</align>
 				<label>[UPPERCASE]$LOCALIZE[10004][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="355">
 				<include>MenuBarSeparator</include>
@@ -1575,18 +1536,6 @@
 			<include>MenuBarBtnOpenCloseAnim</include>
 			<control type="image" id="115">
 				<include>MenuBarSeparator</include>
-			</control>
-			<control type="button" id="210">
-				<description>CinemaVision</description>
-				<include>MenuBarSettingsBtn</include>
-				<label>[UPPERCASE]$INFO[System.AddonTitle(script.cinemavision)][/UPPERCASE]</label>
-				<onclick>Dialog.Close(MovieInformation)</onclick>
-				<onclick>RunScript(script.cinemavision,experience)</onclick>
-				<visible>System.HasAddon(script.cinemavision) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode)]</visible>
-			</control>
-			<control type="image" id="122">
-				<include>MenuBarSeparator</include>
-				<visible>Control.IsVisible(210)</visible>
 			</control>
 			<control type="button" id="8">
 				<description>Play / Open</description>
@@ -1639,7 +1588,6 @@
 				<include>MenuBarArrowBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[31130][/UPPERCASE]</label>
 				<onclick>ActivateWindow(1106)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="118">
 				<include>MenuBarSeparator</include>
@@ -1669,30 +1617,6 @@
 			</control>
 			<control type="image" id="121">
 				<include>MenuBarSeparator</include>
-			</control>
-			<control type="button" id="213">
-				<description>TV Tunes</description>
-				<include>MenuBarSettingsBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[31928][/UPPERCASE]</label>
-				<onclick>RunScript(script.tvtunes,mode=solo)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
-				<visible>System.HasAddon(script.tvtunes) + [String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,musicvideo)] + String.IsEmpty(Window(movieinformation).Property(TvTunes_HideVideoInfoButton))</visible>
-			</control>
-			<control type="image" id="124">
-				<include>MenuBarSeparator</include>
-				<visible>Control.IsVisible(213)</visible>
-			</control>
-			<control type="button" id="218">
-				<description>Video Extras</description>
-				<include>MenuBarSettingsBtn</include>
-				<label>[UPPERCASE]$ADDON[script.videoextras 32001][/UPPERCASE]</label>
-				<onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
-				<visible>System.HasAddon(script.videoextras) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,musicvideo)]
-				+ String.IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
-			</control>
-			<control type="image" id="126">
-				<include>MenuBarSeparator</include>
-				<visible>Control.IsVisible(218)</visible>
 			</control>
 		</control>
 	</include>
@@ -1757,7 +1681,6 @@
 				<description>Refresh</description>
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]-[/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="118">
 				<include>MenuBarSeparator</include>
@@ -1767,7 +1690,6 @@
 				<description>Get Thumb</description>
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]-[/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="119">
 				<include>MenuBarSeparator</include>
@@ -1777,7 +1699,6 @@
 				<description>Get Fanart</description>
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]-[/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="120">
 				<include>MenuBarSeparator</include>
@@ -1787,7 +1708,7 @@
 				<description>Set My Rating</description>
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]-[/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode) + Control.IsEnabled(7)</enable>
+				<enable>Control.IsEnabled(7)</enable>
 			</control>
 			<control type="image" id="122">
 				<include>MenuBarSeparator</include>
@@ -1798,7 +1719,6 @@
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$ADDON[script.cdartmanager 32042][/UPPERCASE]</label>
 				<onclick>RunScript(script.cdartmanager)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>System.HasAddon(script.cdartmanager)</visible>
 			</control>
 			<control type="image" id="123">
@@ -1810,7 +1730,6 @@
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[21435] $LOCALIZE[15101][/UPPERCASE]</label>
 				<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 				<visible>System.HasAddon(script.libraryeditor)</visible>
 			</control>
 			<control type="image" id="124">
@@ -1945,7 +1864,6 @@
 				<textwidth>142</textwidth>
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[24020][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="116">
 				<include>MenuBarSeparator</include>
@@ -1956,7 +1874,6 @@
 				<textwidth>142</textwidth>
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[24022][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="117">
 				<include>MenuBarSeparator</include>
@@ -1967,7 +1884,6 @@
 				<textwidth>142</textwidth>
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[24021][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="118">
 				<include>MenuBarSeparator</include>
@@ -1988,7 +1904,6 @@
 				<textwidth>142</textwidth>
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[24069][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="120">
 				<include>MenuBarSeparator</include>
@@ -2000,7 +1915,6 @@
 				<textoffsetx>7</textoffsetx>
 				<include>MenuBarRadioBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[21340][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="121">
 				<include>MenuBarSeparator</include>
@@ -2080,7 +1994,6 @@
 				<include>MenuBarSettingsBtn</include>
 				<onclick>RunPlugin($INFO[ListItem.FileNameAndPath]/%%GET_INFO%%)</onclick>
 				<label>[UPPERCASE]$LOCALIZE[32029][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="116">
 				<include>MenuBarSeparator</include>
@@ -2090,7 +2003,6 @@
 				<include>MenuBarSettingsBtn</include>
 				<onclick>RunPlugin($INFO[ListItem.FileNameAndPath]/%%GET_THUMB%%)</onclick>
 				<label>[UPPERCASE]$LOCALIZE[13405][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="119">
 				<include>MenuBarSeparator</include>
@@ -2100,70 +2012,8 @@
 				<include>MenuBarSettingsBtn</include>
 				<onclick>RunPlugin($INFO[ListItem.FileNameAndPath]/%%GET_FANART%%)</onclick>
 				<label>[UPPERCASE]$LOCALIZE[20413][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="120">
-				<include>MenuBarSeparator</include>
-			</control>
-		</control>
-	</include>
-	
-	<include name="VideoExtrasMenuBar">
-		<control type="grouplist" id="987">
-			<width>ScreenWidth</width>
-			<height>MenuBarHeight</height>
-			<itemgap>0</itemgap>
-			<align>center</align>
-			<orientation>horizontal</orientation>
-			<usecontrolcoords>true</usecontrolcoords>
-			<onup>555</onup>
-			<ondown>500</ondown>
-			<onleft>987</onleft>
-			<onright>987</onright>
-			<include>MenuBarBtnOpenCloseAnim</include>
-			<control type="image" id="115">
-				<include>MenuBarSeparator</include>
-			</control>
-			<control type="button" id="215">
-				<description>Close</description>
-				<include>MenuBarSettingsBtn</include>
-				<onclick>PreviousMenu</onclick>
-				<label>[UPPERCASE]$LOCALIZE[31937][/UPPERCASE]</label>
-			</control>
-			<control type="image" id="116">
-				<include>MenuBarSeparator</include>
-			</control>
-			<control type="radiobutton" id="216">
-				<description>Hide Plot</description>
-				<include>MenuBarRadioBtn</include>
-				<selected>Skin.HasSetting(HideVideoExtrasPlot)</selected>
-				<onclick>Skin.ToggleSetting(HideVideoExtrasPlot)</onclick>
-				<label>[UPPERCASE]$LOCALIZE[31044][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
-			</control>
-			<control type="image" id="117">
-				<include>MenuBarSeparator</include>
-			</control>
-			<control type="button" id="217">
-				<description>TV Tunes</description>
-				<include>MenuBarSettingsBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[31928][/UPPERCASE]</label>
-				<onclick>RunScript(script.tvtunes,mode=solo)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
-				<visible>System.HasAddon(script.tvtunes) + String.IsEmpty(Window(movieinformation).Property(TvTunes_HideVideoInfoButton))</visible>
-			</control>
-			<control type="image" id="124">
-				<include>MenuBarSeparator</include>
-				<visible>System.HasAddon(script.tvtunes) + String.IsEmpty(Window(movieinformation).Property(TvTunes_HideVideoInfoButton))</visible>
-			</control>
-			<control type="button" id="219">
-				<description>Settings</description>
-				<include>MenuBarSettingsBtn</include>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
-				<onclick>Addon.OpenSettings(script.videoextras)</onclick>
-				<label>[UPPERCASE]$LOCALIZE[10004][/UPPERCASE]</label>
-			</control>
-			<control type="image" id="125">
 				<include>MenuBarSeparator</include>
 			</control>
 		</control>
@@ -2435,24 +2285,10 @@
 			<control type="image" id="135">
 				<include>MenuBarSeparator</include>
 			</control>
-			<control type="button" id="100">
-				<description>Video Extras</description>
-				<include>MenuBarSettingsBtn</include>
-				<label>[UPPERCASE]$ADDON[script.extendedinfo 32132][/UPPERCASE]</label>
-				<onclick>RunScript(script.videoextras,display,"$INFO[Window.Property(FilenameAndPath)]")</onclick>
-				<visible>System.HasAddon(script.videoextras) + String.IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))</visible>
-				<visible>!String.IsEmpty(Window.Property(FilenameAndPath))</visible>
-			</control>
-			<control type="image" id="132">
-				<include>MenuBarSeparator</include>
-				<visible>System.HasAddon(script.videoextras) + String.IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))</visible>
-				<visible>!String.IsEmpty(Window.Property(FilenameAndPath))</visible>
-			</control>
 			<control type="button" id="445">
 				<description>Manage</description>
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$ADDON[script.extendedinfo 32133][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="133">
 				<include>MenuBarSeparator</include>
@@ -2483,7 +2319,6 @@
 				<label>[UPPERCASE]$LOCALIZE[14018][/UPPERCASE]</label>
 				<onclick>Skin.SetString(ExtendedInfoDialog,4)</onclick>
 				<onclick>ActivateWindow(1101)</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="117">
 				<include>MenuBarSeparator</include>
@@ -2504,7 +2339,6 @@
 				<textwidth>165</textwidth>
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$ADDON[script.extendedinfo 32024][/UPPERCASE]</label>
-				<enable>!Skin.HasSetting(EnableKioskMode)</enable>
 			</control>
 			<control type="image" id="119">
 				<include>MenuBarSeparator</include>
@@ -2610,7 +2444,7 @@
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[31302][/UPPERCASE]</label>
 				<onclick>RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$ESCINFO[ListItem.DBID])</onclick>
-				<enable>!Skin.HasSetting(EnableKioskMode) + System.HasAddon(script.artwork.downloader)</enable>
+				<enable>System.HasAddon(script.artwork.downloader)</enable>
 			</control>
 			<control type="image" id="123">
 				<include>MenuBarSeparator</include>

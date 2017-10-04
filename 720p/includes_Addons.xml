@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<includes>	
-	<!-- Video Extras -->
-	<variable name="VideoExtrasLogo">
-		<value condition="String.Contains(ListItem.Path),BDMV">$INFO[ListItem.Path,../,logo.png]</value>
-		<value>$INFO[ListItem.Path,,logo.png]</value>
-	</variable>
-	<!-- END Video Extras -->
-	
+<includes>
 	<!-- TV Show Next Aired -->
 	<variable name="NextAiredTotal">
 		<value condition="Control.HasFocus(215) + !String.IsEqual(Container(215).NumItems,1)">$INFO[Container(215).NumItems,, $LOCALIZE[20343]]$INFO[Window(home).Property(NextAired.215.Wday), ,]$INFO[Window(home).Property(NextAired.215.Date), ,]</value>
@@ -442,7 +435,7 @@
 			<width>49</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/bluray.png</texture>
+			<texture>flagging/default/video/bluray.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(Path),bluray) | String.Contains(Container(100).ListItem.Property(Path),blu-ray) | String.Contains(Container(100).ListItem.Property(Path),brrip) | String.Contains(Container(100).ListItem.Property(Path),bd25) | String.Contains(Container(100).ListItem.Property(Path),bd50)</visible>
 		</control>
@@ -451,7 +444,7 @@
 			<width>49</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/web-dl.png</texture>
+			<texture>flagging/default/video/web-dl.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>[String.Contains(Container(100).ListItem.Property(Path),web-dl) | String.Contains(Container(100).ListItem.Property(Path),web-download)] + ![String.Contains(Container(100).ListItem.Property(VideoCodec),vp8) | String.Contains(Container(100).ListItem.Property(VideoCodec),vp9)]</visible>
 		</control>
@@ -460,7 +453,7 @@
 			<width>65</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/3d.png</texture>
+			<texture>flagging/default/video/3d.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(Path),.3d.) | String.Contains(Container(100).ListItem.Property(Path),hsbs) | String.Contains(Container(100).ListItem.Property(Path),sbs) | String.Contains(Container(100).ListItem.Property(Path),half-sbs)</visible>
 		</control>
@@ -469,7 +462,7 @@
 			<width>82</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/hddvd.png</texture>
+			<texture>flagging/default/video/hddvd.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(ListItem.FilenameAndPath,hddvd) | String.Contains(ListItem.FilenameAndPath,hd-dvd)</visible>
 		</control>
@@ -478,7 +471,7 @@
 			<width>55</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/dvd.png</texture>
+			<texture>flagging/default/video/dvd.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>[String.Contains(ListItem.FileExtension,iso) | String.Contains(ListItem.FileExtension,img) | String.Contains(ListItem.FilenameAndPath,dvd) | String.Contains(ListItem.FileExtension,ifo) | String.Contains(ListItem.FileExtension,vob) | String.Contains(ListItem.FilenameAndPath,dvdrip) | String.Contains(ListItem.FilenameAndPath,dvdr5) | String.Contains(ListItem.FilenameAndPath,.r5) | String.Contains(ListItem.FilenameAndPath,dvdscreener) | String.Contains(ListItem.FilenameAndPath,dvdscr) | String.Contains(ListItem.FilenameAndPath,screener)] + ![String.Contains(ListItem.FilenameAndPath,hddvd) | String.Contains(ListItem.FilenameAndPath,hd-dvd)]</visible>
 		</control>
@@ -487,7 +480,7 @@
 			<width>74</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/hdtv.png</texture>
+			<texture>flagging/default/video/hdtv.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(Path),hdtv) | String.Contains(Container(100).ListItem.Property(Path),hdrip)</visible>
 		</control>
@@ -496,7 +489,7 @@
 			<width>74</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/sdtv.png</texture>
+			<texture>flagging/default/video/sdtv.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(Path),PDTV) | String.Contains(Container(100).ListItem.Property(Path),sdtv)</visible>
 		</control>
@@ -505,7 +498,7 @@
 			<width>41</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/film.png</texture>
+			<texture>flagging/default/video/film.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(Path),.telesync) | String.Contains(Container(100).ListItem.Property(Path),.ts.) | String.Contains(Container(100).ListItem.Property(Path),.cam)</visible>
 		</control>
@@ -514,7 +507,7 @@
 			<width>64</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/vhs.png</texture>
+			<texture>flagging/default/video/vhs.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(Path),vhs)</visible>
 		</control>
@@ -526,7 +519,7 @@
 			<width>57</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/xvid.png</texture>
+			<texture>flagging/default/video/xvid.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),xvid)</visible>
 		</control>
@@ -535,7 +528,7 @@
 			<width>67</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/divx.png</texture>
+			<texture>flagging/default/video/divx.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),divx) | String.Contains(Container(100).ListItem.Property(VideoCodec),div2) | String.Contains(Container(100).ListItem.Property(VideoCodec),div3) | String.Contains(Container(100).ListItem.Property(VideoCodec),div4) | String.Contains(Container(100).ListItem.Property(VideoCodec),divx 4) | String.Contains(Container(100).ListItem.Property(VideoCodec),div5) | String.Contains(Container(100).ListItem.Property(VideoCodec),dx50)</visible>
 		</control>
@@ -544,7 +537,7 @@
 			<width>61</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/h264.png</texture>
+			<texture>flagging/default/video/h264.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),h264) | String.Contains(Container(100).ListItem.Property(VideoCodec),x264) | String.Contains(Container(100).ListItem.Property(VideoCodec),hdmv)</visible>
 		</control>
@@ -553,7 +546,7 @@
 			<width>61</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/hevc.png</texture>
+			<texture>flagging/default/video/hevc.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),hevc)</visible>
 		</control>
@@ -562,7 +555,7 @@
 			<width>61</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/avc1.png</texture>
+			<texture>flagging/default/video/avc1.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),avc1)</visible>
 		</control>
@@ -571,7 +564,7 @@
 			<width>80</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/wvc1.png</texture>
+			<texture>flagging/default/video/wvc1.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),wvc1) | String.Contains(Container(100).ListItem.Property(VideoCodec),vc-1)</visible>
 		</control>
@@ -580,7 +573,7 @@
 			<width>80</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/wmv.png</texture>
+			<texture>flagging/default/video/wmv.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),wmv) | String.Contains(Container(100).ListItem.Property(VideoCodec),wmv2) | String.Contains(Container(100).ListItem.Property(VideoCodec),wmv3)</visible>
 		</control>
@@ -589,7 +582,7 @@
 			<width>57</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/mpeg1video.png</texture>
+			<texture>flagging/default/video/mpeg1video.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),mpeg1video)</visible>
 		</control>
@@ -598,7 +591,7 @@
 			<width>57</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/mpeg2video.png</texture>
+			<texture>flagging/default/video/mpeg2video.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),mpeg2video) | String.Contains(Container(100).ListItem.Property(VideoCodec),mpeg video) | String.Contains(Container(100).ListItem.Property(VideoCodec),mpeg2)</visible>
 		</control>
@@ -607,7 +600,7 @@
 			<width>57</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/mpeg4video.png</texture>
+			<texture>flagging/default/video/mpeg4video.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),mpeg-4 visual) | String.Contains(Container(100).ListItem.Property(VideoCodec),mpg4) | String.Contains(Container(100).ListItem.Property(VideoCodec),mp4v)</visible>
 		</control>
@@ -616,7 +609,7 @@
 			<width>36</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/svq3.png</texture>
+			<texture>flagging/default/video/svq3.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),svq1) | String.Contains(Container(100).ListItem.Property(VideoCodec),svq3)</visible>
 		</control>
@@ -625,7 +618,7 @@
 			<width>36</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/vp8.png</texture>
+			<texture>flagging/default/video/vp8.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),vp8) | String.Contains(Container(100).ListItem.Property(VideoCodec),vp9)</visible>
 		</control>
@@ -634,7 +627,7 @@
 			<width>22</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/flv.png</texture>
+			<texture>flagging/default/video/flv.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(VideoCodec),flv)</visible>
 		</control>
@@ -645,18 +638,8 @@
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<texture>flagging/$VAR[MediaFlagTheme]/video/$INFO[Container(100).ListItem.Property(VideoResolution)].png</texture>
-			<visible>!String.IsEmpty(Container(100).ListItem.Property(VideoCodec)) + !Skin.HasSetting(HideVideoResMediaFlag)</visible>
-		</control>
-		<control type="image" id="621">
-			<description>Right Border</description>
-			<left>-5</left>
-			<width>4</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<texture>flagging/$VAR[MediaFlagTheme]/flag-right-border.png</texture>
-			<visible>!String.IsEmpty(Container(100).ListItem.Property(VideoCodec)) + Skin.HasSetting(HideVideoResMediaFlag)</visible>
+			<texture>flagging/default/video/$INFO[Container(100).ListItem.Property(VideoResolution)].png</texture>
+			<visible>!String.IsEmpty(Container(100).ListItem.Property(VideoCodec))</visible>
 		</control>
 	</include>
 	
@@ -672,7 +655,7 @@
 			<width>55</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/mp3.png</texture>
+			<texture>flagging/default/audio/mp3.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),mp3)</visible>
 		</control>
@@ -681,7 +664,7 @@
 			<width>53</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/mp2.png</texture>
+			<texture>flagging/default/audio/mp2.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),mp2)</visible>
 		</control>
@@ -690,7 +673,7 @@
 			<width>53</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/mp1.png</texture>
+			<texture>flagging/default/audio/mp1.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),mp1)</visible>
 		</control>
@@ -699,7 +682,7 @@
 			<width>53</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/opus.png</texture>
+			<texture>flagging/default/audio/opus.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),opus)</visible>
 		</control>
@@ -708,7 +691,7 @@
 			<width>50</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/dts.png</texture>
+			<texture>flagging/default/audio/dts.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),dca)</visible>
 		</control>
@@ -717,7 +700,7 @@
 			<width>59</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/pcm.png</texture>
+			<texture>flagging/default/audio/pcm.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),pcm_s16be) | String.Contains(Container(100).ListItem.Property(AudioCodec),pcm_s16le) | String.Contains(Container(100).ListItem.Property(AudioCodec),pcm_u8)</visible>
 		</control>
@@ -726,7 +709,7 @@
 			<width>40</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/aac.png</texture>
+			<texture>flagging/default/audio/aac.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),aac)</visible>
 		</control>
@@ -735,7 +718,7 @@
 			<width>66</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/dolbydigital.png</texture>
+			<texture>flagging/default/audio/dolbydigital.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>[String.Contains(Container(100).ListItem.Property(AudioCodec),ac3) | String.Contains(Container(100).ListItem.Property(AudioCodec),ac-3)] + !String.Contains(Container(100).ListItem.Property(AudioCodec),eac3)</visible>
 		</control>
@@ -744,7 +727,7 @@
 			<width>66</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/eac3.png</texture>
+			<texture>flagging/default/audio/eac3.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),eac3) + !String.Contains(Container(100).ListItem.Property(Path),.atmos)</visible>
 		</control>
@@ -753,7 +736,7 @@
 			<width>60</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/truehd.png</texture>
+			<texture>flagging/default/audio/truehd.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),truehd) + !String.Contains(Container(100).ListItem.Property(Path),.atmos)</visible>
 		</control>
@@ -762,7 +745,7 @@
 			<width>66</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/atmos.png</texture>
+			<texture>flagging/default/audio/atmos.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>[String.Contains(Container(100).ListItem.Property(AudioCodec),eac3) | String.Contains(Container(100).ListItem.Property(AudioCodec),truehd)] + String.Contains(Container(100).ListItem.Property(Path),.atmos)</visible>
 		</control>
@@ -771,7 +754,7 @@
 			<width>80</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/wma.png</texture>
+			<texture>flagging/default/audio/wma.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),wmav2) | String.Contains(Container(100).ListItem.Property(AudioCodec),wma)</visible>
 		</control>
@@ -780,7 +763,7 @@
 			<width>80</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/wmapro.png</texture>
+			<texture>flagging/default/audio/wmapro.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),wmapro)</visible>
 		</control>
@@ -789,7 +772,7 @@
 			<width>48</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/flac.png</texture>
+			<texture>flagging/default/audio/flac.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),flac)</visible>
 		</control>
@@ -798,7 +781,7 @@
 			<width>42</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/vorbis.png</texture>
+			<texture>flagging/default/audio/vorbis.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),vorbis)</visible>
 		</control>
@@ -807,7 +790,7 @@
 			<width>42</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/ogg.png</texture>
+			<texture>flagging/default/audio/ogg.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),ogg)</visible>
 		</control>
@@ -816,7 +799,7 @@
 			<width>66</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/$VAR[GlobalSearchDTSHDMediaFlag]</texture>
+			<texture>flagging/default/audio/$VAR[GlobalSearchDTSHDMediaFlag]</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Container(100).ListItem.Property(AudioCodec),dtshd_ma) | String.Contains(Container(100).ListItem.Property(AudioCodec),dtshd_hra)</visible>
 		</control>
@@ -826,7 +809,7 @@
 			<width>43</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/$INFO[Container(100).ListItem.Property(AudioChannels)].png</texture>
+			<texture>flagging/default/audio/$INFO[Container(100).ListItem.Property(AudioChannels)].png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>!String.IsEmpty(Container(100).ListItem.Property(AudioCodec))</visible>
 		</control>
@@ -838,141 +821,12 @@
 			<width>50</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/aspectratio/$INFO[Container(100).ListItem.Property(VideoAspect)].png</texture>
+			<texture>flagging/default/aspectratio/$INFO[Container(100).ListItem.Property(VideoAspect)].png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>!String.IsEmpty(Container(100).ListItem.Property(VideoAspect)) + !Skin.HasSetting(HideAspectRatioMediaFlag)</visible>
+			<visible>!String.IsEmpty(Container(100).ListItem.Property(VideoAspect))</visible>
 		</control>
 	</include>
 
-	<include name="GlobalSearchRatingMediaFlags">
-		<control type="image" id="634">
-			<description>Rated General</description>
-			<width>26</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-general.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Mpaa),Rated G) | String.Contains(Container(100).ListItem.Property(Mpaa),US:G) | String.Contains(Container(100).ListItem.Property(Mpaa),USA:G)</visible>
-		</control>
-		<control type="image" id="635">
-			<description>Rated PG</description>
-			<width>40</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-pg.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>[String.Contains(Container(100).ListItem.Property(Mpaa),Rated PG) + !String.Contains(Container(100).ListItem.Property(Mpaa),Rated PG-13)] | [String.Contains(Container(100).ListItem.Property(Mpaa),US:PG) + !String.Contains(Container(100).ListItem.Property(Mpaa),US:PG-13)] | [String.Contains(Container(100).ListItem.Property(Mpaa),USA:PG) + !String.Contains(Container(100).ListItem.Property(Mpaa),USA:PG-13)]</visible>
-		</control>
-		<control type="image" id="636">
-			<description>Rated PG-13</description>
-			<width>63</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-pg13.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Mpaa),Rated PG-13) | String.Contains(Container(100).ListItem.Property(Mpaa),US:PG-13) | String.Contains(Container(100).ListItem.Property(Mpaa),USA:PG-13)</visible>
-		</control>
-		<control type="image" id="637">
-			<description>Rated R</description>
-			<width>34</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-restricted.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Mpaa),Rated R) | String.Contains(Container(100).ListItem.Property(Mpaa),US:R) | String.Contains(Container(100).ListItem.Property(Mpaa),USA:R)</visible>
-		</control>
-		<control type="image" id="638">
-			<description>Rated NC-17</description>
-			<width>63</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-nc17.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Mpaa),Rated NC-17) | String.Contains(Container(100).ListItem.Property(Mpaa),US:NC-17) | String.Contains(Container(100).ListItem.Property(Mpaa),USA:NC-17)</visible>
-		</control>
-		<control type="image" id="702">
-			<description>Rated UK U</description>
-			<width>27</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-u.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Mpaa),UK:U)</visible>
-		</control>
-		<control type="image" id="703">
-			<description>Rated UK PG</description>
-			<width>36</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-pg.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Mpaa),UK:PG)</visible>
-		</control>
-		<control type="image" id="704">
-			<description>Rated UK 12</description>
-			<width>32</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-12.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Mpaa),UK:12) + !String.Contains(Container(100).ListItem.Property(Mpaa),UK:12a)</visible>
-		</control>
-		<control type="image" id="705">
-			<description>Rated UK 12A</description>
-			<width>43</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-12a.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Mpaa),UK:12a)</visible>
-		</control>
-		<control type="image" id="706">
-			<description>Rated UK 15</description>
-			<width>32</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-15.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Mpaa),UK:15)</visible>
-		</control>
-		<control type="image" id="707">
-			<description>Rated UK 18</description>
-			<width>32</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-18.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Mpaa),UK:18)</visible>
-		</control>
-		<control type="image" id="708">
-			<description>Rated UK R18</description>
-			<width>43</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-r18.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Mpaa),UK:R18)</visible>
-		</control>
-		<control type="image" id="738">
-			<description>Unrated</description>
-			<width>44</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/unrated.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.Contains(Container(100).ListItem.Property(Path),.unrated)</visible>
-		</control>
-		<control type="image" id="739">
-			<description>No Rating</description>
-			<width>44</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/no-rating.png</texture>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>String.IsEmpty(Container(100).ListItem.Property(Mpaa)) + !String.Contains(Container(100).ListItem.Property(Path),.unrated)</visible>
-		</control>
-	</include>
-	
 	<include name="GlobalSearchStudioMediaFlag">
 		<control type="group">
 			<visible>!String.IsEmpty(Container(100).ListItem.Property(Studio))</visible>
@@ -980,7 +834,7 @@
 			<control type="image" id="692">
 				<width>58</width>
 				<height>35</height>
-				<texture border="6">flagging/$VAR[MediaFlagTheme]/flag-bg.png</texture>
+				<texture border="6">flagging/default/flag-bg.png</texture>
 				<animation effect="fade" end="95" condition="true">Conditional</animation>
 			</control>
 					
@@ -1266,7 +1120,7 @@
 				<top>650</top>
 				<width>58</width>
 				<height>35</height>
-				<texture border="6">flagging/$VAR[MediaFlagTheme]/flag-bg.png</texture>
+				<texture border="6">flagging/default/flag-bg.png</texture>
 				<include>MediaFlagFadeAnim</include>
 				<visible>!String.IsEmpty(Control.GetLabel(691))</visible>
 			</control>
@@ -1291,7 +1145,7 @@
 			<width>49</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/bluray.png</texture>
+			<texture>flagging/default/video/bluray.png</texture>
 			<visible>String.Contains(Window.Property(FilenameAndPath),bluray) | String.Contains(Window.Property(FilenameAndPath),blu-ray) | String.Contains(Window.Property(FilenameAndPath),brrip) | String.Contains(Window.Property(FilenameAndPath),bd25) | String.Contains(Window.Property(FilenameAndPath),bd50)</visible>
 		</control>
 		<control type="image" id="694">
@@ -1299,7 +1153,7 @@
 			<width>49</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/web-dl.png</texture>
+			<texture>flagging/default/video/web-dl.png</texture>
 			<visible>[String.Contains(Window.Property(FilenameAndPath),web-dl) | String.Contains(Window.Property(FilenameAndPath),web-download)] + ![String.Contains(Window.Property(VideoCodec),vp8) | String.Contains(Window.Property(VideoCodec),vp9)]</visible>
 		</control>
 		<control type="image" id="601">
@@ -1307,7 +1161,7 @@
 			<width>65</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/3d.png</texture>
+			<texture>flagging/default/video/3d.png</texture>
 			<visible>String.Contains(Window.Property(FilenameAndPath),.3d.) | String.Contains(Window.Property(FilenameAndPath),hsbs) | String.Contains(Window.Property(FilenameAndPath),sbs) | String.Contains(Window.Property(FilenameAndPath),half-sbs)</visible>
 		</control>
 		<control type="image" id="602">
@@ -1315,7 +1169,7 @@
 			<width>82</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/hddvd.png</texture>
+			<texture>flagging/default/video/hddvd.png</texture>
 			<visible>String.Contains(Window.Property(FilenameAndPath),hddvd) | String.Contains(Window.Property(FilenameAndPath),hd-dvd)</visible>
 		</control>
 		<control type="image" id="718">
@@ -1323,7 +1177,7 @@
 			<width>55</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/dvd.png</texture>
+			<texture>flagging/default/video/dvd.png</texture>
 			<visible>[String.EndsWith(Window.Property(FilenameAndPath),.iso) | String.EndsWith(Window.Property(FilenameAndPath),.img) | String.Contains(Window.Property(FilenameAndPath),dvd) | String.EndsWith(Window.Property(FilenameAndPath),.ifo) | String.EndsWith(Window.Property(FilenameAndPath),.vob) | String.Contains(Window.Property(FilenameAndPath),dvdrip) | String.Contains(Window.Property(FilenameAndPath),dvdr5) | String.Contains(Window.Property(FilenameAndPath),.r5) | String.Contains(Window.Property(FilenameAndPath),dvdscreener) | String.Contains(Window.Property(FilenameAndPath),dvdscr) | String.Contains(Window.Property(FilenameAndPath),screener)] + ![String.Contains(Window.Property(FilenameAndPath),hddvd) | String.Contains(Window.Property(FilenameAndPath),hd-dvd)]</visible>
 		</control>
 		<control type="image" id="603">
@@ -1331,7 +1185,7 @@
 			<width>74</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/hdtv.png</texture>
+			<texture>flagging/default/video/hdtv.png</texture>
 			<visible>String.Contains(Window.Property(FilenameAndPath),hdtv) | String.Contains(Window.Property(FilenameAndPath),hdrip)</visible>
 		</control>
 		<control type="image" id="604">
@@ -1339,7 +1193,7 @@
 			<width>74</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/sdtv.png</texture>
+			<texture>flagging/default/video/sdtv.png</texture>
 			<visible>String.Contains(Window.Property(FilenameAndPath),PDTV) | String.Contains(Window.Property(FilenameAndPath),sdtv)</visible>
 		</control>
 		<control type="image" id="608">
@@ -1347,7 +1201,7 @@
 			<width>41</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/film.png</texture>
+			<texture>flagging/default/video/film.png</texture>
 			<visible>String.Contains(Window.Property(FilenameAndPath),.telesync) | String.Contains(Window.Property(FilenameAndPath),.ts.) | String.Contains(Window.Property(FilenameAndPath),.cam)</visible>
 		</control>
 		<control type="image" id="678">
@@ -1355,7 +1209,7 @@
 			<width>64</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/vhs.png</texture>
+			<texture>flagging/default/video/vhs.png</texture>
 			<visible>String.Contains(Window.Property(FilenameAndPath),vhs)</visible>
 		</control>
 	</include>
@@ -1366,7 +1220,7 @@
 			<width>57</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/xvid.png</texture>
+			<texture>flagging/default/video/xvid.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),xvid)</visible>
 		</control>
@@ -1375,7 +1229,7 @@
 			<width>67</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/divx.png</texture>
+			<texture>flagging/default/video/divx.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),divx) | String.Contains(Window.Property(VideoCodec),div2) | String.Contains(Window.Property(VideoCodec),div3) | String.Contains(Window.Property(VideoCodec),div4) | String.Contains(Window.Property(VideoCodec),divx 4) | String.Contains(Window.Property(VideoCodec),div5) | String.Contains(Window.Property(VideoCodec),dx50)</visible>
 		</control>
@@ -1384,7 +1238,7 @@
 			<width>61</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/h264.png</texture>
+			<texture>flagging/default/video/h264.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),h264) | String.Contains(Window.Property(VideoCodec),x264) | String.Contains(Window.Property(VideoCodec),hdmv)</visible>
 		</control>
@@ -1393,7 +1247,7 @@
 			<width>61</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/hevc.png</texture>
+			<texture>flagging/default/video/hevc.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),hevc)</visible>
 		</control>
@@ -1402,7 +1256,7 @@
 			<width>61</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/avc1.png</texture>
+			<texture>flagging/default/video/avc1.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),avc1)</visible>
 		</control>
@@ -1411,7 +1265,7 @@
 			<width>80</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/wvc1.png</texture>
+			<texture>flagging/default/video/wvc1.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),wvc1) | String.Contains(Window.Property(VideoCodec),vc-1)</visible>
 		</control>
@@ -1420,7 +1274,7 @@
 			<width>80</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/wmv.png</texture>
+			<texture>flagging/default/video/wmv.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),wmv) | String.Contains(Window.Property(VideoCodec),wmv2) | String.Contains(Window.Property(VideoCodec),wmv3)</visible>
 		</control>
@@ -1429,7 +1283,7 @@
 			<width>57</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/mpeg1video.png</texture>
+			<texture>flagging/default/video/mpeg1video.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),mpeg1video)</visible>
 		</control>
@@ -1438,7 +1292,7 @@
 			<width>57</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/mpeg2video.png</texture>
+			<texture>flagging/default/video/mpeg2video.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),mpeg2video) | String.Contains(Window.Property(VideoCodec),mpeg video) | String.Contains(Window.Property(VideoCodec),mpeg2)</visible>
 		</control>
@@ -1447,7 +1301,7 @@
 			<width>57</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/mpeg4video.png</texture>
+			<texture>flagging/default/video/mpeg4video.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),mpeg-4 visual) | String.Contains(Window.Property(VideoCodec),mpg4) | String.Contains(Window.Property(VideoCodec),mp4v)</visible>
 		</control>
@@ -1456,7 +1310,7 @@
 			<width>36</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/svq3.png</texture>
+			<texture>flagging/default/video/svq3.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),svq1) | String.Contains(Window.Property(VideoCodec),svq3)</visible>
 		</control>
@@ -1465,7 +1319,7 @@
 			<width>36</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/vp8.png</texture>
+			<texture>flagging/default/video/vp8.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),vp8) | String.Contains(Window.Property(VideoCodec),vp9)</visible>
 		</control>
@@ -1474,7 +1328,7 @@
 			<width>22</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/video/flv.png</texture>
+			<texture>flagging/default/video/flv.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(VideoCodec),flv)</visible>
 		</control>
@@ -1485,18 +1339,8 @@
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<texture>flagging/$VAR[MediaFlagTheme]/video/$INFO[Window.Property(VideoResolution)].png</texture>
-			<visible>!String.IsEmpty(Window.Property(VideoCodec)) + !Skin.HasSetting(HideVideoResMediaFlag)</visible>
-		</control>
-		<control type="image" id="621">
-			<description>Right Border</description>
-			<left>-5</left>
-			<width>4</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<texture>flagging/$VAR[MediaFlagTheme]/flag-right-border.png</texture>
-			<visible>!String.IsEmpty(Window.Property(VideoCodec)) + Skin.HasSetting(HideVideoResMediaFlag)</visible>
+			<texture>flagging/default/video/$INFO[Window.Property(VideoResolution)].png</texture>
+			<visible>!String.IsEmpty(Window.Property(VideoCodec))</visible>
 		</control>
 	</include>
 	
@@ -1512,7 +1356,7 @@
 			<width>55</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/mp3.png</texture>
+			<texture>flagging/default/audio/mp3.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),mp3)</visible>
 		</control>
@@ -1521,7 +1365,7 @@
 			<width>53</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/mp2.png</texture>
+			<texture>flagging/default/audio/mp2.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),mp2)</visible>
 		</control>
@@ -1530,7 +1374,7 @@
 			<width>53</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/mp1.png</texture>
+			<texture>flagging/default/audio/mp1.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),mp1)</visible>
 		</control>
@@ -1539,7 +1383,7 @@
 			<width>53</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/opus.png</texture>
+			<texture>flagging/default/audio/opus.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),opus)</visible>
 		</control>
@@ -1548,7 +1392,7 @@
 			<width>50</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/dts.png</texture>
+			<texture>flagging/default/audio/dts.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),dca)</visible>
 		</control>
@@ -1557,7 +1401,7 @@
 			<width>59</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/pcm.png</texture>
+			<texture>flagging/default/audio/pcm.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),pcm_s16be) | String.Contains(Window.Property(AudioCodec),pcm_s16le) | String.Contains(Window.Property(AudioCodec),pcm_u8)</visible>
 		</control>
@@ -1566,7 +1410,7 @@
 			<width>40</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/aac.png</texture>
+			<texture>flagging/default/audio/aac.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),aac)</visible>
 		</control>
@@ -1575,7 +1419,7 @@
 			<width>66</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/dolbydigital.png</texture>
+			<texture>flagging/default/audio/dolbydigital.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>[String.Contains(Window.Property(AudioCodec),ac3) | String.Contains(Window.Property(AudioCodec),ac-3)] + !String.Contains(Window.Property(AudioCodec),eac3)</visible>
 		</control>
@@ -1584,7 +1428,7 @@
 			<width>66</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/eac3.png</texture>
+			<texture>flagging/default/audio/eac3.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),eac3) + !String.Contains(Window.Property(FilenameAndPath),.atmos)</visible>
 		</control>
@@ -1593,7 +1437,7 @@
 			<width>60</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/truehd.png</texture>
+			<texture>flagging/default/audio/truehd.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),truehd) + !String.Contains(Window.Property(FilenameAndPath),.atmos)</visible>
 		</control>
@@ -1602,7 +1446,7 @@
 			<width>66</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/atmos.png</texture>
+			<texture>flagging/default/audio/atmos.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>[String.Contains(Window.Property(AudioCodec),eac3) | String.Contains(Window.Property(AudioCodec),truehd)] + String.Contains(Window.Property(FilenameAndPath),.atmos)</visible>
 		</control>
@@ -1611,7 +1455,7 @@
 			<width>80</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/wma.png</texture>
+			<texture>flagging/default/audio/wma.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),wmav2) | String.Contains(Window.Property(AudioCodec),wma)</visible>
 		</control>
@@ -1620,7 +1464,7 @@
 			<width>80</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/wmapro.png</texture>
+			<texture>flagging/default/audio/wmapro.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),wmapro)</visible>
 		</control>
@@ -1629,7 +1473,7 @@
 			<width>48</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/flac.png</texture>
+			<texture>flagging/default/audio/flac.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),flac)</visible>
 		</control>
@@ -1638,7 +1482,7 @@
 			<width>42</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/vorbis.png</texture>
+			<texture>flagging/default/audio/vorbis.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),vorbis)</visible>
 		</control>
@@ -1647,7 +1491,7 @@
 			<width>42</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/ogg.png</texture>
+			<texture>flagging/default/audio/ogg.png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),ogg)</visible>
 		</control>
@@ -1656,7 +1500,7 @@
 			<width>66</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/$VAR[ExtendedInfoDTSHDMediaFlag]</texture>
+			<texture>flagging/default/audio/$VAR[ExtendedInfoDTSHDMediaFlag]</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>String.Contains(Window.Property(AudioCodec),dtshd_ma) | String.Contains(Window.Property(AudioCodec),dtshd_hra)</visible>
 		</control>
@@ -1666,7 +1510,7 @@
 			<width>43</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/audio/$INFO[Window.Property(AudioChannels)].png</texture>
+			<texture>flagging/default/audio/$INFO[Window.Property(AudioChannels)].png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
 			<visible>!String.IsEmpty(Window.Property(AudioCodec))</visible>
 		</control>
@@ -1678,127 +1522,11 @@
 			<width>50</width>
 			<height>35</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/aspectratio/$INFO[Window.Property(VideoAspect)].png</texture>
+			<texture>flagging/default/aspectratio/$INFO[Window.Property(VideoAspect)].png</texture>
 			<!--<fadetime>MediaFlagsCrossfadeTime</fadetime>-->
-			<visible>!String.IsEmpty(Window.Property(VideoAspect)) + !Skin.HasSetting(HideAspectRatioMediaFlag)</visible>
+			<visible>!String.IsEmpty(Window.Property(VideoAspect))</visible>
 		</control>
 	</include>
-	
-	<include name="ExtendedInfoRatingMediaFlags">
-		<control type="image" id="634">
-			<description>Rated General</description>
-			<width>26</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-general.png</texture>
-			<visible>String.IsEqual(Window.Property(mpaa),G)</visible>
-		</control>
-		<control type="image" id="635">
-			<description>Rated PG</description>
-			<width>40</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-pg.png</texture>
-			<visible>String.IsEqual(Window.Property(mpaa),PG)</visible>
-		</control>
-		<control type="image" id="636">
-			<description>Rated PG-13</description>
-			<width>63</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-pg13.png</texture>
-			<visible>String.IsEqual(Window.Property(mpaa),PG-13)</visible>
-		</control>
-		<control type="image" id="637">
-			<description>Rated R</description>
-			<width>34</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-restricted.png</texture>
-			<visible>String.IsEqual(Window.Property(mpaa),R)</visible>
-		</control>
-		<control type="image" id="638">
-			<description>Rated NC-17</description>
-			<width>63</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-nc17.png</texture>
-			<visible>String.IsEqual(Window.Property(mpaa),NC-17)</visible>
-		</control>
-		<control type="image" id="702">
-			<description>Rated UK U</description>
-			<width>27</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-u.png</texture>
-			<visible>String.IsEqual(Window.Property(mpaa),U)</visible>
-		</control>
-		<control type="image" id="703">
-			<description>Rated UK PG</description>
-			<width>36</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-pg.png</texture>
-			<visible>String.Contains(Window.Property(mpaa),UK:PG)</visible>
-		</control>
-		<control type="image" id="704">
-			<description>Rated UK 12</description>
-			<width>32</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-12.png</texture>
-			<visible>String.IsEqual(Window.Property(mpaa),12)</visible>
-		</control>
-		<control type="image" id="705">
-			<description>Rated UK 12A</description>
-			<width>43</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-12a.png</texture>
-			<visible>String.IsEqual(Window.Property(mpaa),12a)</visible>
-		</control>
-		<control type="image" id="706">
-			<description>Rated UK 15</description>
-			<width>32</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-15.png</texture>
-			<visible>String.IsEqual(Window.Property(mpaa),15)</visible>
-		</control>
-		<control type="image" id="707">
-			<description>Rated UK 18</description>
-			<width>32</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-18.png</texture>
-			<visible>String.IsEqual(Window.Property(mpaa),18)</visible>
-		</control>
-		<control type="image" id="708">
-			<description>Rated UK R18</description>
-			<width>43</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/mpaa-uk-r18.png</texture>
-			<visible>String.IsEqual(Window.Property(mpaa),R18)</visible>
-		</control>
-		<control type="image" id="738">
-			<description>Unrated</description>
-			<width>44</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/unrated.png</texture>
-			<visible>String.Contains(Window.Property(FilenameAndPath),.unrated)</visible>
-		</control>
-		<control type="image" id="739">
-			<description>No Rating</description>
-			<width>44</width>
-			<height>35</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>flagging/$VAR[MediaFlagTheme]/ratings/no-rating.png</texture>
-			<visible>[String.IsEqual(Window.Property(mpaa),NR) | [String.IsEmpty(Window.Property(mpaa)) + !String.IsEqual(Window.Property(type),tvshow) + !String.IsEqual(Window.Property(type),season)]] + !String.Contains(Window.Property(FilenameAndPath),.unrated)</visible>
-		</control>
-	</include>
-	<!-- END Extended Info -->
 	
 	<!-- Next Up Notification -->
 	<variable name="NextUpInfoPlayButton">
@@ -1837,11 +1565,6 @@
 		<value condition="Skin.HasSetting(UseAlternativeDuration) + Integer.IsEqual(Window(Home).Property(SkinHelper.ListItem.Duration.Minutes),1) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration.Hours))">$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Hours),, $LOCALIZE[12392]] $INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Minutes),, $LOCALIZE[31158]]</value>
 		<value condition="Skin.HasSetting(UseAlternativeDuration) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Duration.Hours))">$INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Hours),, $LOCALIZE[12392]] $INFO[Window(Home).Property(SkinHelper.ListItem.Duration.Minutes),, $LOCALIZE[12391]]</value>
 		<value>$INFO[Window(home).Property(SkinHelper.ListItem.Runtime),, $LOCALIZE[12391]]</value>
-	</variable>
-	
-	<variable name="SplashScreenImageDuration">
-		<value condition="!String.IsEmpty(Skin.String(SplashScreenImageDuration))">$INFO[Skin.String(SplashScreenImageDuration)]</value>
-		<value>5</value>
 	</variable>
 	
 	<variable name="MovieSetPlot">

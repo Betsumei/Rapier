@@ -364,7 +364,7 @@
 											<height>126</height>
 											<texture background="true">$VAR[GlobalSearchPosterThumb]</texture>
 											<aspectratio align="center" aligny="center">scale</aspectratio>
-											<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+											<include>ListViewCoverFocusAnim</include>
 										</control>
 										<control type="image">
 											<description>Quality / Unwatched</description>
@@ -567,7 +567,7 @@
 											<height>126</height>
 											<texture background="true">$VAR[GlobalSearchPosterThumb]</texture>
 											<aspectratio align="center" aligny="center">scale</aspectratio>
-											<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+											<include>ListViewCoverFocusAnim</include>
 										</control>
 										<control type="image">
 											<description>Watched Overlay</description>
@@ -737,7 +737,7 @@
 											<height>126</height>
 											<texture background="true">$VAR[GlobalSearchPosterThumb]</texture>
 											<aspectratio align="center" aligny="center">scale</aspectratio>
-											<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+											<include>ListViewCoverFocusAnim</include>
 										</control>
 										<control type="image">
 											<description>Watched Overlay</description>
@@ -922,7 +922,7 @@
 											<align>left</align>
 											<aspectratio align="center" aligny="center">scale</aspectratio>
 											<texture background="true">$INFO[ListItem.Icon]</texture>
-											<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+											<include>ListViewCoverFocusAnim</include>
 										</control>
 										<control type="image">
 											<description>Quality / Unwatched</description>
@@ -1119,7 +1119,7 @@
 											<align>left</align>
 											<aspectratio align="center" aligny="center">scale</aspectratio>
 											<texture background="true">$INFO[ListItem.Icon]</texture>
-											<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+											<include>ListViewCoverFocusAnim</include>
 										</control>
 										<control type="image">
 											<description>Quality / Unwatched</description>
@@ -1332,7 +1332,7 @@
 											<height>126</height>
 											<texture background="true">$VAR[GlobalSearchPosterThumb]</texture>
 											<aspectratio align="center" aligny="center">scale</aspectratio>
-											<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+											<include>ListViewCoverFocusAnim</include>
 										</control>
 										<control type="image">
 											<description>Quality / Unwatched</description>
@@ -1566,7 +1566,7 @@
 											<height>126</height>
 											<texture background="true">$VAR[GlobalSearchPosterThumb]</texture>
 											<aspectratio align="center" aligny="center">scale</aspectratio>
-											<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+											<include>ListViewCoverFocusAnim</include>
 										</control>
 										<control type="image">
 											<description>Quality / Unwatched</description>
@@ -1761,7 +1761,7 @@
 											<align>left</align>
 											<aspectratio align="center" aligny="center">keep</aspectratio>
 											<texture background="true">$INFO[ListItem.Icon]</texture>
-											<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+											<include>ListViewCoverFocusAnim</include>
 										</control>
 										<control type="label">
 											<left>142</left>
@@ -1913,7 +1913,7 @@
 											<align>left</align>
 											<aspectratio align="center" aligny="center">scale</aspectratio>
 											<texture background="true">$INFO[ListItem.Icon]</texture>
-											<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+											<include>ListViewCoverFocusAnim</include>
 										</control>
 										<control type="label">
 											<left>142</left>
@@ -2075,7 +2075,7 @@
 											<align>left</align>
 											<aspectratio align="center" aligny="center">scale</aspectratio>
 											<texture background="true">$INFO[ListItem.Icon]</texture>
-											<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+											<include>ListViewCoverFocusAnim</include>
 										</control>
 										<control type="label">
 											<left>142</left>
@@ -2257,7 +2257,7 @@
 											<align>left</align>
 											<aspectratio align="center" aligny="center">scale</aspectratio>
 											<texture background="true">$INFO[ListItem.Icon]</texture>
-											<include condition="![Skin.String(LowCPUPowerMode,Animations) | Skin.String(LowCPUPowerMode,Full)]">ListViewCoverFocusAnim</include>
+											<include>ListViewCoverFocusAnim</include>
 										</control>
 										<control type="label">
 											<left>142</left>

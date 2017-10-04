@@ -99,7 +99,6 @@
 			<include>AudioMediaFlags</include>
 			<include>AspectMediaFlags</include>
 			<include>SubtitleMediaFlags</include>
-			<include condition="!Skin.HasSetting(HideRatingMediaFlag)">RatingMediaFlags</include>
 		</control>
 	</include>
 
@@ -216,7 +215,7 @@
 	<include name="VideoDetails">
 		<control type="group">
 			<visible>Container.Content(Movies) | Container.Content(Sets)</visible>
-			<include condition="!Skin.HasSetting(DisableMediaFlags)">InfoPaneMediaFlag</include>
+			<include>InfoPaneMediaFlag</include>
 			
 			<control type="label">
 				<include>InfoPaneHeadLabel2</include>
@@ -226,12 +225,12 @@
 		
 		<control type="group">
 			<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
-			<include condition="System.HasAddon(script.tv.show.next.aired) + !Skin.HasSetting(DisableMediaFlags) + !Skin.HasSetting(EnableNextAiredStatusMediaFlag)">NextAiredStatusMediaFlag</include>
-			<include condition="!Skin.HasSetting(DisableMediaFlags)">StudioMediaFlag</include>
+			<include condition="System.HasAddon(script.tv.show.next.aired)">NextAiredStatusMediaFlag</include>
+			<include>StudioMediaFlag</include>
 			
 			<control type="group">
 				<visible>!String.IsEmpty(ListItem.Size) + String.IsEmpty(ListItem.Studio)</visible>
-				<include condition="!Skin.HasSetting(DisableMediaFlags)">InfoPaneMediaFlag</include>
+				<include>InfoPaneMediaFlag</include>
 			</control>
 				
 			<control type="label">
@@ -249,7 +248,7 @@
 		
 		<control type="group">
 			<visible>Container.Content(Episodes)</visible>
-			<include condition="!Skin.HasSetting(DisableMediaFlags)">InfoPaneMediaFlag</include>
+			<include>InfoPaneMediaFlag</include>
 			
 			<control type="label">
 				<include>InfoPaneHeadLabel2</include>
@@ -259,7 +258,7 @@
 		
 		<control type="group">
 			<visible>Container.Content(MusicVideos)</visible>
-			<include condition="!Skin.HasSetting(DisableMediaFlags)">InfoPaneMediaFlag</include>
+			<include>InfoPaneMediaFlag</include>
 					
 			<control type="label">
 				<include>InfoPaneHeadLabel2</include>
@@ -269,7 +268,7 @@
 		
 		<control type="group">
 			<visible>Window.IsActive(VideoPlaylist) | Container.Content(Videos)</visible>
-			<include condition="!Skin.HasSetting(DisableMediaFlags)">InfoPaneMediaFlag</include>
+			<include>InfoPaneMediaFlag</include>
 		</control>
 	</include>
 	
@@ -305,7 +304,7 @@
 		
 		<control type="group">
 			<visible>Container.Content(MusicVideos)</visible>
-			<include condition="!Skin.HasSetting(DisableMediaFlags)">InfoPaneMediaFlag</include>
+			<include>InfoPaneMediaFlag</include>
 			
 			<control type="label">
 				<include>InfoPaneHeadLabel2</include>

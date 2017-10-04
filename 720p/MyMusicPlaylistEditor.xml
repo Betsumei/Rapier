@@ -9,7 +9,7 @@
 			<include condition="[[!String.IsEmpty(Skin.String(CustomMusicBGPath)) + [Skin.String(CustomMusicBGType,2) | Skin.String(CustomMusicBGType,3)]] 
 			| Skin.String(CustomMusicBGType,4)] + Skin.HasSetting(ApplyAllMusicCustomBG)">BackgroundMusic</include>
 			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)">BackgroundVideoPlaying</include>
-			<include condition="!Skin.HasSetting(DisableMusicPlayingBG)">BackgroundMusicPlaying</include>
+			<include>BackgroundMusicPlaying</include>
 			<include>BackgroundOpenCloseAnim</include>
 		</control>
 		
@@ -522,7 +522,6 @@
 	
 		<control type="group">
 			<description>Top Bar Area</description>
-			<visible>![System.IdleTime(3) + Skin.HasSetting(HideTopBar) + !Control.HasFocus(555)]</visible>
 			<depth>DepthTopBar</depth>
 			<include>TopBarImage</include>
 			<include>TopBarOpenCloseAnim</include>

@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">500</defaultcontrol>
 	<menucontrol>850</menucontrol>
-	<views>50,63,52,91,93</views>
+	<views>50,63,52,91</views>
 	
 	<controls>
 		<control type="group">
@@ -10,7 +10,7 @@
 			<include>BackgroundDefault</include>
 			<include>BackgroundAddonsFanart</include>
 			<include condition="!Skin.HasSetting(DisableVideoPlayingBG)">BackgroundVideoPlaying</include>
-			<include condition="!Skin.HasSetting(DisableMusicPlayingBG)">BackgroundMusicPlaying</include>
+			<include>BackgroundMusicPlaying</include>
 			<include>BackgroundOpenCloseAnim</include>
 		</control>
 		
@@ -22,7 +22,6 @@
 			<include>ListView</include> <!-- 52 -->
 			<include>AlbumThumbsView</include> <!-- 63 -->
 			<include condition="!Skin.HasSetting(DisableAddonsListInfoView)">AddonsListInfoView</include> <!-- 91 -->
-			<include condition="!Skin.HasSetting(DisableAddonsWrapListInfoView)">AddonsWrapListInfoView</include> <!-- 93 -->
 		</control>
 			
 		<include>MediaMenuBar</include>

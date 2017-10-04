@@ -230,14 +230,14 @@
 				<description>Movie / TV Show Title</description>
 				<include>BreadCrumbLabel</include>
 				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
-				<visible>[Skin.HasSetting(DisplayMovieTitle) + [Container.Content(Movies) | Container.Content(Sets)]] | [Skin.HasSetting(DisplayTVShowsTitle) + Container.Content(TVShows)]</visible>
+				<visible>Container.Content(Movies) | Container.Content(Sets) | Container.Content(TVShows)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
 			<control type="label" id="5525">
 				<description>Music Video Artist</description>
 				<include>BreadCrumbLabel</include>
 				<label>[UPPERCASE]$INFO[ListItem.Artist][/UPPERCASE]</label>
-				<visible>Skin.HasSetting(DisplayMusicVideosArtist) + Container.Content(MusicVideos) + !String.IsEmpty(ListItem.Artist)</visible>
+				<visible>Container.Content(MusicVideos) + !String.IsEmpty(ListItem.Artist)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
 			<control type="image">
@@ -370,7 +370,7 @@
 				<description>Music Library Label</description>
 				<include>BreadCrumbLabel</include>
 				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
-				<visible>Skin.HasSetting(DisplayMusicLibraryTitle) + Window.IsActive(Music) + !String.IsEmpty(ListItem.Artist)</visible>
+				<visible>Window.IsActive(Music) + !String.IsEmpty(ListItem.Artist)</visible>
 				<include>BreadCrumbSlideLvl3Anim</include>
 			</control>
 			<control type="image">
@@ -1182,76 +1182,6 @@
 				<include>BreadCrumbSeparator</include>
 				<include>BreadCrumbSlideLvl3Anim</include>
 				<visible>Window.IsActive(script-globalsearch-infodialog.xml)</visible>
-			</control>
-		</control>
-	</include>
-	
-	<include name="BreadCrumbVideoExtras">
-		<control type="grouplist">
-			<left>10</left>
-			<top>StatusBartop</top>
-			<height>43</height>
-			<width>740</width>
-			<itemgap>8</itemgap>
-			<orientation>horizontal</orientation>
-			<usecontrolcoords>true</usecontrolcoords>
-			<control type="button" id="555">
-				<include>BreadCrumbHomeIcon2</include>
-				<include>BreadCrumbSlideLvl1Anim</include>
-			</control>
-			<control type="image">
-				<include>BreadCrumbSeparator</include>
-				<include>BreadCrumbSlideLvl1Anim</include>
-			</control>
-			<!--
-			<control type="label">
-				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$ADDON[script.videoextras 32001][/UPPERCASE]</label>
-				<include>BreadCrumbSlideLvl2Anim</include>
-			</control>
-			<control type="image">
-				<include>BreadCrumbSeparator</include>
-				<include>BreadCrumbSlideLvl2Anim</include>
-			</control>
-			-->
-			<control type="label">
-				<description>Movies</description>
-				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[20342][/UPPERCASE]</label>
-				<visible>String.IsEmpty(ListItem.TvShowTitle)</visible>
-				<include>BreadCrumbSlideLvl2Anim</include>
-			</control>
-			<control type="label">
-				<description>TV Shows</description>
-				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$LOCALIZE[20343][/UPPERCASE]</label>
-				<visible>!String.IsEmpty(ListItem.TvShowTitle)</visible>
-				<include>BreadCrumbSlideLvl2Anim</include>
-			</control>
-			<control type="image">
-				<include>BreadCrumbSeparator</include>
-				<include>BreadCrumbSlideLvl2Anim</include>
-			</control>
-			<control type="label">
-				<description>Movie / TV Show / Music Video Title</description>
-				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$INFO[ListItem.Title][/UPPERCASE]</label>
-				<include>BreadCrumbSlideLvl3Anim</include>
-				<visible>!String.IsEmpty(ListItem.Title)</visible>
-			</control>
-			<control type="image">
-				<include>BreadCrumbSeparator</include>
-				<include>BreadCrumbSlideLvl3Anim</include>
-				<visible>!String.IsEmpty(ListItem.Title)</visible>
-			</control>
-			<control type="label">
-				<include>BreadCrumbLabel</include>
-				<label>[UPPERCASE]$ADDON[script.videoextras 32001][/UPPERCASE]</label>
-				<include>BreadCrumbSlideLvl4Anim</include>
-			</control>
-			<control type="image">
-				<include>BreadCrumbSeparator</include>
-				<include>BreadCrumbSlideLvl4Anim</include>
 			</control>
 		</control>
 	</include>

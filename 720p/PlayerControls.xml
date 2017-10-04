@@ -121,7 +121,6 @@
 			</control>
 
 			<control type="group">
-				<visible>!Skin.HasSetting(EnableMusicCdArt)</visible>
 				<left>DialogMarginOffsetX</left>
 				<top>Dialog4MarginOffsetY</top>
 
@@ -151,46 +150,6 @@
 					<height>190</height>
 					<texture diffuse="covers/player-control-media-cover-diffuse.png">$INFO[MusicPlayer.Cover]</texture>
 					<aspectratio>keep</aspectratio>
-				</control>
-			</control>
-
-			<control type="group">
-				<visible>Skin.HasSetting(EnableMusicCdArt)</visible>
-				<left>DialogMarginOffsetX</left>
-				<top>Dialog4MarginOffsetY</top>
-				
-				<control type="image">
-					<description>Default Cover Background</description>
-					<width>190</width>
-					<height>190</height>
-					<texture border="5">panels/panel-content-border.png</texture>
-					<aspectratio>stretch</aspectratio>
-					<animation effect="fade" end="75" condition="true">Conditional</animation>
-				</control>
-				
-				<control type="image">
-					<description>Default Cover</description>
-					<left>5</left>
-					<top>5</top>
-					<width>180</width>
-					<height>180</height>
-					<bordertexture>icons/cdart/cdart-mask.png</bordertexture>
-					<texture diffuse="icons/cdart/cdart-mask.png">icons/cdart/cdart.png</texture>
-					<aspectratio>keep</aspectratio>
-					<include>CdArtImageRotateAnim</include>
-					<visible>String.IsEmpty(MusicPlayer.Cover)</visible>
-				</control>
-
-				<control type="image">
-					<description>Cover</description>
-					<left>5</left>
-					<top>5</top>
-					<width>180</width>
-					<height>180</height>
-					<bordertexture>icons/cdart/cdart-mask.png</bordertexture>
-					<texture fallback="icons/cdart/cdart.png" diffuse="icons/cdart/cdart-mask.png">$INFO[MusicPlayer.Cover]</texture>
-					<aspectratio>keep</aspectratio>
-					<include>CdArtImageRotateAnim</include>
 				</control>
 			</control>
 
@@ -379,7 +338,7 @@
 				<height>190</height>
 				<texture diffuse="covers/player-control-media-cover-diffuse.png">$VAR[ClearImageOSD]</texture>
 				<aspectratio>keep</aspectratio>
-				<animation effect="slide" end="0,45" condition="Skin.HasSetting(ShowClearArtOSD) + !String.IsEmpty(Player.Art(clearart))">Conditional</animation>
+				<animation effect="slide" end="0,45" condition="!String.IsEmpty(Player.Art(clearart))">Conditional</animation>
 			</control>
 
 			<control type="grouplist">
@@ -567,7 +526,7 @@
 				<height>190</height>
 				<texture diffuse="covers/player-control-media-cover-diffuse.png">$VAR[ClearImageOSD]</texture>
 				<aspectratio>keep</aspectratio>
-				<animation effect="slide" end="0,45" condition="Skin.HasSetting(ShowClearArtOSD) + !String.IsEmpty(Player.Art(tvshow.clearart))">Conditional</animation>
+				<animation effect="slide" end="0,45" condition="!String.IsEmpty(Player.Art(tvshow.clearart))">Conditional</animation>
 			</control>
 
 			<control type="grouplist">
