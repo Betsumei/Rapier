@@ -10,8 +10,6 @@
 	<onunload>Skin.Reset(ExpandReorderCategoryToggleSettings)</onunload>
 	<onunload>Skin.Reset(ExpandAddMoreCategorySettings)</onunload>
 	<onunload>Skin.Reset(ExpandAddMoreCategorySettings2)</onunload>
-	<onunload>Skin.Reset(ExpandAddMoreCategorySettings3)</onunload>
-	<onunload>Skin.Reset(ExpandAddMoreCategorySettings4)</onunload>
 	<onunload>Skin.Reset(ExpandMusicSubMenuSettings)</onunload>
 	<onunload>Skin.Reset(ExpandVideosSubMenuSettings)</onunload>
 	<onunload>Skin.Reset(ExpandMoviesSubMenuSettings)</onunload>
@@ -32,14 +30,6 @@
 	<onunload>Skin.Reset(ExpandCustom6SubMenuSettings)</onunload>
 	<onunload>Skin.Reset(ExpandCustom7SubMenuSettings)</onunload>
 	<onunload>Skin.Reset(ExpandCustom8SubMenuSettings)</onunload>
-	<onunload>Skin.Reset(ExpandCustom9SubMenuSettings)</onunload>
-	<onunload>Skin.Reset(ExpandCustom10SubMenuSettings)</onunload>
-	<onunload>Skin.Reset(ExpandCustom11SubMenuSettings)</onunload>
-	<onunload>Skin.Reset(ExpandCustom12SubMenuSettings)</onunload>
-	<onunload>Skin.Reset(ExpandCustom13SubMenuSettings)</onunload>
-	<onunload>Skin.Reset(ExpandCustom14SubMenuSettings)</onunload>
-	<onunload>Skin.Reset(ExpandCustom15SubMenuSettings)</onunload>
-	<onunload>Skin.Reset(ExpandCustom16SubMenuSettings)</onunload>
 	<!-- Backgrounds -->
 	<onunload>Skin.Reset(ExpandCustomDefaultBGSettings)</onunload>
 	<onunload>Skin.Reset(ExpandCustomMusicBGSettings)</onunload>

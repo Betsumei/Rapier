@@ -4090,14 +4090,6 @@
 			<onclick condition="Skin.HasSetting(ExpandAddMoreCategorySettings2) + Skin.String(SelectedExpandedBtn,2)">Skin.SetString(AddMoreCategoryBtn6BackgroundImagePathLabel,$PARAM[label])</onclick>
 			<onclick condition="Skin.HasSetting(ExpandAddMoreCategorySettings2) + Skin.String(SelectedExpandedBtn,3)">Skin.SetString(AddMoreCategoryBtn7BackgroundImagePathLabel,$PARAM[label])</onclick>
 			<onclick condition="Skin.HasSetting(ExpandAddMoreCategorySettings2) + Skin.String(SelectedExpandedBtn,4)">Skin.SetString(AddMoreCategoryBtn8BackgroundImagePathLabel,$PARAM[label])</onclick>
-			<onclick condition="Skin.HasSetting(ExpandAddMoreCategorySettings3) + Skin.String(SelectedExpandedBtn,1)">Skin.SetString(AddMoreCategoryBtn9BackgroundImagePathLabel,$PARAM[label])</onclick>
-			<onclick condition="Skin.HasSetting(ExpandAddMoreCategorySettings3) + Skin.String(SelectedExpandedBtn,2)">Skin.SetString(AddMoreCategoryBtn10BackgroundImagePathLabel,$PARAM[label])</onclick>
-			<onclick condition="Skin.HasSetting(ExpandAddMoreCategorySettings3) + Skin.String(SelectedExpandedBtn,3)">Skin.SetString(AddMoreCategoryBtn11BackgroundImagePathLabel,$PARAM[label])</onclick>
-			<onclick condition="Skin.HasSetting(ExpandAddMoreCategorySettings3) + Skin.String(SelectedExpandedBtn,4)">Skin.SetString(AddMoreCategoryBtn12BackgroundImagePathLabel,$PARAM[label])</onclick>
-			<onclick condition="Skin.HasSetting(ExpandAddMoreCategorySettings4) + Skin.String(SelectedExpandedBtn,1)">Skin.SetString(AddMoreCategoryBtn13BackgroundImagePathLabel,$PARAM[label])</onclick>
-			<onclick condition="Skin.HasSetting(ExpandAddMoreCategorySettings4) + Skin.String(SelectedExpandedBtn,2)">Skin.SetString(AddMoreCategoryBtn14BackgroundImagePathLabel,$PARAM[label])</onclick>
-			<onclick condition="Skin.HasSetting(ExpandAddMoreCategorySettings4) + Skin.String(SelectedExpandedBtn,3)">Skin.SetString(AddMoreCategoryBtn15BackgroundImagePathLabel,$PARAM[label])</onclick>
-			<onclick condition="Skin.HasSetting(ExpandAddMoreCategorySettings4) + Skin.String(SelectedExpandedBtn,4)">Skin.SetString(AddMoreCategoryBtn16BackgroundImagePathLabel,$PARAM[label])</onclick>
 			<onclick>Dialog.Close(1132)</onclick>
 		</control>
 	</include>
