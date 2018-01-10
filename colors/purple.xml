@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+	<color name="WhiteColor">fff3f3f3</color>
+	<color name="BlackColor">ff000000</color>
+	<color name="GreyColor">ffcecece</color>
+	<color name="GreyColor2">ffc0c0c0</color>
+	<color name="GreyColor3">ff5e5e5e</color>
+	<color name="DefaultColor">ffbf00ff</color> <!-- purple -->
+	<color name="DefaultColor2">ffc656eb</color> <!-- dark purple -->
+	<color name="DefaultColor3">fff0c2ff</color> <!-- light purple -->
+	<color name="SelectedColor">ffffffff</color>
+	<color name="SelectedColor2">ffbf00ff</color>
+	<color name="DisabledColor">ff8e8e8e</color>
+	<color name="ShadowColor">ff000000</color>
+	<color name="ButtonColor">ffcecece</color>
+	<color name="ButtonFocusColor">ffffffff</color>
+	<color name="MenuItemColor">ffcecece</color>
+	<color name="MenuItemFocusColor">ffffffff</color>
+	<color name="HomeSubMenuColor">ff8e8e8e</color>
+	<color name="BreadCrumbColor">ffc0c0c0</color>
+	<color name="InfoPaneColor">fff0c2ff</color>
+	<color name="InfoPaneColor2">ffc656eb</color>
+	<color name="ListColor">ffcecece</color>
+	<color name="ListColor2">ffc0c0c0</color>
+	<color name="ListColor3">ffc656eb</color>
+	<color name="MediaInfoColor">ffd2d2d2</color>
+	<color name="MediaInfoTitleColor">ffbf00ff</color>
+	<color name="MediaInfoTitleColor2">ffc0c0c0</color>
+	<color name="MediaInfoItemColor">ffc656eb</color>
+	<color name="MediaInfoItemColor2">ffcecece</color>
+	<color name="LiveTVColumnColor">dd4e1313</color>
+	<color name="LiveTVColumnColor2">ff983535</color>
+	<color name="LiveTVColumnColor3">ff000000</color>
+	<color name="DialogTitleColor">ffbf00ff</color>
+	<color name="StatusBarColor">fff0c2ff</color>
+	<color name="StatusBarColor2">ffc656eb</color>
+	<color name="ProgressColor">ffb8b8b8</color>
+	<color name="ProgressColor2">ffc656eb</color>
+	<color name="SettingsCatColor">ffbf00ff</color>
+	<color name="SettingsContentColor">ffcecece</color>
+	<color name="ContentTitleColor">ffc656eb</color>
+	<color name="WeatherHighTemperatureColor">ffce4421</color>
+	<color name="HomeCategoryNoFocusImageColor">ff9e0fb4</color>
+</colors>
